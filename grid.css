@@ -1,0 +1,189 @@
+* {
+  margin: 10px;
+  padding: 0;
+}
+body {
+  background-color: rgba(169, 126, 207, 0.801);
+}
+.volver{
+  text-align: left;
+  color: black;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:1rem;
+    font-family: 'shizuru', cursive;
+    font-size: 25px;
+    background-color: #22c0c397;
+    color: aliceblue;
+    list-style-type: none;
+}
+
+.menu li {
+  display: flex;
+  flex-wrap:wrap; 
+  text-align: center;
+  display:inline-block;
+}
+.menu li a:hover{
+  background: rgb(68,209,214);
+  background: linear-gradient(344deg, rgba(68,209,214,0.692612079011292) 28%, rgba(173,224,141,0.3383403532311362) 72%);
+}
+h1 {
+  font-family: "shizuru", cursive;
+  font-size: 1.7rem;
+  text-align: center;
+}
+.card-body {
+  border-style: groove;
+  background-color: rgba(230, 218, 202, 0.623);
+}
+.card-body:hover {
+  -webkit-transform: scale(1);
+  transform: scale(1.1);
+}
+
+.div.contenedor {
+  /*contenedor padre*/
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  grid-template-areas:
+    "header    header "
+    "contenido contenido "
+    "masajes extra"
+    "indumentaria indumentaria";
+}
+.contenedor .header {
+  background: rgb(165, 229, 240);
+  background: radial-gradient(
+    circle,
+    rgba(68, 191, 214, 0.692612079011292) 28%,
+    rgba(151, 204, 202, 0.40129555240064774) 94%
+  );
+  font-family: "Architects Daughter", cursive;
+  font-size: 1.5rem;
+  text-align: center;
+  align-items: center;
+  
+   grid-area: header;
+}
+.contenedor .contenido {
+  /*contenido*/
+  height: 100%;
+  width:auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgb(68, 191, 214);
+  background: radial-gradient(
+    circle,
+    rgba(68, 191, 214, 0.8326681014202556) 12%,
+    rgba(151, 153, 204, 0.8270658605238971) 90%
+  );
+  font-size: 20px;
+  font-family: "Architects Daughter", cursive;
+
+  grid-area: contenido;
+}
+.contenedor .extra {
+  /*terapia alternativa =aside*/
+  text-align: justify;
+  font-family: "Architects Daughter", cursive;
+  font-size: 1.5rem;
+  text-align: center;
+  background: rgb(68, 105, 214);
+  background: linear-gradient(
+    90deg,
+    rgba(68, 105, 214, 0.692612079011292) 28%,
+    rgba(141, 224, 221, 0.6029762246695554) 77%
+  );
+
+  grid-area: extra;
+}
+img {
+    width: 100px;
+    border-style: groove;
+}
+.ul1 {
+  list-style-type: none;
+}
+.lista{
+    width: 100%;
+    height: auto;
+    list-style-type: none;
+    font-size: 1rem;
+    text-align: center;
+    font-family: "Architects Daughter", cursive;
+    background-color: rgb(76, 211, 216);
+    background: linear-gradient(
+    90deg,
+    rgba(68, 209, 214, 0.692612079011292) 28%,
+    rgba(173, 224, 141, 0.342472022988883) 54%
+  );
+
+}
+.contenedor.masajes {
+  
+ grid-area: masajes;
+}
+.contenedor .indumentaria {
+  /*footer*/
+  color: rgb(12, 23, 26);
+  background: rgb(12, 23, 26);
+  background: radial-gradient(
+    circle,
+    rgba(68, 191, 214, 0.692612079011292) 66%,
+    rgba(151, 153, 204, 0.8270658605238971) 94%
+  );
+  text-align: center;
+  font-family: "Architects Daughter", cursive;
+  font-size: 1rem;
+  height: auto;
+  width: 100%;
+
+  grid-area: indumentaria;
+}
+.btn {
+  border-style: outset;
+}
+.btn:hover {
+  background-color: aliceblue;
+}
+
+@media screen and (max-width: 768px){
+    .contenedor {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-areas: 
+     "header    header"
+     "contenido contenido"
+     "masajes"  "extra"
+     "indumentaria" "indumentaria";
+    }
+}
+
+@media screen and (max-width: 480px){ 
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8 1fr);
+    grid-template-areas: 
+     "header"
+     "header"
+     "contenido"
+     "contenido"
+     "contenido"
+     "masajes"
+     "extra"
+     "indumentaria";
+  }
+}

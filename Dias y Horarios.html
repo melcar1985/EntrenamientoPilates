@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./fotos/favicon_io/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>
+    <title> Clases de Pilates</title>
+</head>
+<a class="fcc-btn" href="index.html">Volver a inicio</a>
+<header class="header">
+  <div>
+    <!--menu de navegacion-->
+    <NAV>
+        <ul class="menu">
+            <img class="img1" src ="./fotos/logo.jpeg" alt="logo">
+            <li><a href="Acerca de mi.html" style="text-decoration: none;"> Acerca de mi</a></li>
+            <li><a href="Actividades.html" style="text-decoration: none;">Actividades</a></li>
+            <li><a href="Productos.html" style="text-decoration: none;">Productos</a></li>
+            <li><a href="Dias y Horarios.html" style="text-decoration: none;">Dias y Horarios</a></li>
+            <li><a href="contacto.html" style="text-decoration: none;">Contacto</a></li>
+
+        </ul>
+    </NAV>
+</div>
+    <h2>Consulta Nuestros Dias y horarios, recibimos todas las tarjetas y medios de pago.</h2> 
+</header>
+<body class="page4">
+  <main class="conteiner">
+    <h3> Dias y horarios por la mañana</h3>
+    <section class="tablas">
+        <table border="1">
+          <tr>
+             <th>Lunes</th>
+             <th>Martes</th>
+             <th>Miercoles</th>
+             <th>Jueves</th>
+             <th>Viernes</th>
+         </tr>
+         <br>
+         <tr>
+             <td >pilates reformer 9:00hs</td>
+             <td>pilates reformer 10:00hs</td>
+             <td>pilates reformer 9:00hs</td>
+             <td>pilates reformer 10:00hs</td>
+             <td>pilates reformer 9:00hs</td>
+            </tr>
+          </table>
+        </section>
+          <h3>Dias y horarios por la tarde</h3> 
+          <section class="tablas">
+          <table border ="1">
+            <tr>
+              <th>Lunes</th>
+              <th>Martes</th>
+              <th>Miercoles</th>
+              <th>Jueves</th>
+              <th>Viernes</th>
+            </tr>
+            <br>
+            <tr>
+              <td>pilates reformer 18:00hs</td>
+              <td>pilates reformer 15:00hs</td>
+              <td>pilates reformer 18:00hs</td>
+              <td>pilates reformer 15:00hs</td>
+              <td>pilates reformer 18:00hs</td>
+            </tr>
+          </table>
+         </section>
+          <br>
+          <div class="pago"> <h3>Metodos de pagos </h3> 
+            Recibimos todas las tarjetas, ingresa al boton segun la forma de pago que elijas.
+            <br>
+            <h3>Promociones</h3>
+                 <br>
+                 <img src="./fotos/banner_promociones_de_compras.jpg" alt="fotos de formas de pago" width="400">
+                </div>
+              </main>
+              </body>
+              <footer class="piedepagina2">
+                <div id="smart-button-container"> <!--boton a pagos-->
+                    <div style="text-align: center;">
+                      <div id="paypal-button-container"></div>
+                    </div>
+                </div>
+                <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+            <script>
+                  function initPayPalButton() {
+                    paypal.Buttons({
+                      style: {
+                        shape: 'pill',
+                        color: 'blue',
+                        layout: 'vertical',
+                        label: 'paypal',
+                        },
+               createOrder: function(data, actions) {
+                        return actions.order.create({
+                          purchase_units: [{"description":"Recibimos todas las tarjetas","amount":{"currency_code":"USD","value":2500}}]
+                        });
+                      },
+               onApprove: function(data, actions) {
+                        return actions.order.capture().then(function(orderData) {
+                          
+                          // Full available details
+                          console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+              
+                          // Show a success message within this page, e.g.
+                          const element = document.getElementById('paypal-button-container');
+                          element.innerHTML = '';
+                          element.innerHTML = '<h3>Thank you for your payment!</h3>';});},onError: function(err) {
+                        console.log(err);}
+                    }).render('#paypal-button-container');
+                  } initPayPalButton();
+            </script>
+          </footer>
+        

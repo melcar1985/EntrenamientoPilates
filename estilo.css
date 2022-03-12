@@ -1,0 +1,389 @@
+/*pagina principal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(to right, rgb(102, 176, 201) 10%, rgb(153, 248, 243));
+}
+.navegacion{ /*fondo de la barra de navegación */
+    background: rgb(18, 97, 97);
+    background: radial-gradient(circle, rgba(105,191,192,1) 85%, rgba(80, 124, 120, 0.832) 87%);
+    width: auto;
+    height: auto;
+} 
+.img1{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+     width: 100px;
+     margin: 5px;
+}
+h1{ /*titulo*/
+    color: #4b9b9bd7;
+    font-family:'Dancing Script', cursive;
+    font-size: 6rem;
+    word-spacing: 1px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+} 
+header nav ul{
+    overflow: hidden;
+    list-style: none;
+
+}
+.volver{
+    text-align: left;
+    color: black;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.menu{ /*color y margen de la barra de navegación*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap:1rem;
+    font-family: 'shizuru', cursive;
+    font-size: 25px;
+    background-color: #22c0c397;
+}
+
+main{
+    padding-top: 5rem;
+}
+.menu li a{ /*palabras del menu*/
+    color: rgb(238, 244, 245);
+    
+}
+.menu li {
+    display: flex;
+    flex-wrap:wrap; 
+    text-align: center;
+    display:inline-block;
+   
+}
+.menu li a:hover{
+    background: rgb(68,209,214);
+    background: linear-gradient(344deg, rgba(68,209,214,0.692612079011292) 28%, rgba(173,224,141,0.3383403532311362) 72%);
+}
+.lema{ 
+    font-family:'Caveat', cursive;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5%;
+    color:darkslateblue;border: black;
+}           
+.texto{ /*texto sobre imagenes*/
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 80px;
+    text-align: center;
+    padding: auto;
+}
+.redes{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    word-spacing: 5px;
+    text-align: left;
+    color: black;
+}
+footer {
+    margin-top: 100px;
+    text-align: center;
+    background-color: rgb(50,169,191);
+    background: radial-gradient(circle, rgba(50,169,191,0.8326681014202556) 10%, rgba(50,163,167,0.8270658605238971) 92%);;
+}
+.grupoCards {
+    justify-content: center;
+}
+.grupoCards div {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.fondo1{
+    margin: 0 auto;
+    padding: auto;
+    background-color:rgb(160,63,251);
+    background: radial-gradient(circle, rgba(160,63,251,1) 4%, rgba(89,69,96,0.8270658605238971) 97%);
+}
+.sobremi{       /*pagina sobre mi*/
+    margin:auto;
+    padding: 2rem;
+    background: radial-gradient(circle, rgba(104,171,172,0.8606793059020483) 86%, rgba(112,167,198,0.6449930313922444) 100%);
+    text-align:center;
+}
+.subtitulo{
+    margin: 1%;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(55, 13, 73);
+    border-style: outset;
+    font-size: 30px;    
+}
+/*efecto*/         
+.subtitulo{
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+ }
+ @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+ 
+.parrafo{
+    font-family:"Architects Daughter", cursive;
+    font-size: 20px;
+    color: aliceblue;
+    line-height: normal;
+}
+.fotos{
+    margin:0;
+    gap: 20px;
+    border-style:groove;
+}
+.subtitulo2{
+    color: #c246c2;
+    align-items: center;
+    text-align: center;
+    border-style:dotted;
+}
+
+.cabecera{
+    border-style:solid;
+    border-color:rgb(160,63,251);
+    background: radial-gradient(circle, rgba(110, 93, 128, 0.658) 4%, rgba(190, 174, 196, 0.827) 97%);
+}
+.ul2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+    text-align: left;
+}
+.subt{
+    text-decoration: underline;
+    color: #e063ce;
+    font-family: 'Caveat', cursive;
+}
+.entrenamiento{
+    margin: 1rem;
+}
+.beneficios{
+    margin-bottom: 5rem;
+    font-family: 'Shizuru', cursive;
+    color: azure;
+    font-size: 20px;
+    text-align:justify;
+    border-style: dotted;
+}
+.beneficios_2{
+    list-style-type:none;
+}
+.articulo_novedad{
+    margin: 1px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    background: rgb(187,174,200);
+    background: radial-gradient(circle, rgba(187,174,200,1) 4%, rgba(89,69,96,0.8270658605238971) 97%);
+    color: rgb(234, 247, 201);
+    text-shadow: 1px 1px rgb(102, 126, 25);
+}
+.h2{
+    text-align: center;
+    text-decoration: underline;
+    text-emphasis-color:initial;
+}
+.parrafo2{
+    text-align: center;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+.video1{
+    margin-left: auto;
+    margin-right: auto;
+}
+.galeri1{
+    margin:0 auto;
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.calendario{
+    text-align: center;
+    font-size: 20px;
+}
+    /* pagina 4 de dias y horarios*/
+.page4{
+    background-color:rgb(144,87,198);
+    margin-left: auto 10%;
+    margin-right: auto 10%;
+    background: radial-gradient(circle, rgba(144,87,198,0.6225840678068102) 6%, rgba(50,163,167,0.8270658605238971) 57%);;
+}
+h3{
+    text-align: center;
+    font-family:'Architects Daughter', cursive; 
+}
+.header{
+    color:rgb(27, 19, 19);
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+    margin-top: auto 20px;
+}
+#main-conteiner{
+    margin:100%;
+    width: 100%;
+}
+
+.tablas{
+    color:rgb(27, 19, 19);
+    font-family: 'Architects Daughter', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 20px;
+    margin-left: auto 100px;
+    margin-right: auto 100px;
+}
+.th, td{
+    border:solid 1px black;
+    text-align: center;
+}
+tr{
+    text-align: center;
+}
+.pago{
+    text-align: center;
+}
+.piedepagina{
+    margin-left: 100px auto;
+    margin-right: 100px auto;
+    text-align: center;
+    width: 70%;
+
+} /*pagina 5 de formulario contacto*/
+.page5{
+    margin: 0%;
+    background-attachment: fixed;
+    background: rgb(50,169,191);
+    background: radial-gradient(circle, rgba(50,169,191,0.8326681014202556) 12%, rgba(50,54,167,0.8270658605238971) 90%);
+}
+.contact{
+    margin: auto;
+    width: 400px;
+    background:#22c0c397;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    border-style:double;
+}
+ input{
+     width: 50%;
+     margin-bottom: 20px;
+     padding: 5%;
+     font-family: Arial, Helvetica, sans-serif;
+     box-sizing: border-box;
+     font-size: 17px;
+     text-align: center;
+}
+ label{
+    display: inline-block;
+    width: 80px;
+}
+ legend{
+    font-size: 30px;
+    color: #f3f0f3;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.botones{
+    text-align: center;
+}
+.boton1{
+ background: #b99cb5;
+ color:#f3f0f3;
+ margin:auto;
+ text-align: center;
+ color: rgb(14, 14, 26);
+}
+.boton1:hover{
+   color: rgb(70, 70, 187);
+}
+.boton2{
+    background: #b99cb5;
+    color:#f3f0f3;
+    margin:auto;
+    text-align: center;
+    color: rgb(14, 14, 26); 
+}
+.boton2:hover{
+    color: rgb(70, 70, 187); 
+} 
+.pago{
+    text-align: center;
+    font-size: 20px;
+    font-family:'Architects Daughter', cursive;  
+}
+h5{
+    font-size: 20px;
+    font-family: 'Architects Daughter', cursive;  
+    text-align: center;
+}
+@media only screen and (max-width: 768px){
+  .menu{
+      width: 100%;
+      display: flex ;
+      flex-direction: column;
+      justify-content: flex-start;
+}
+.navegacion{
+     width: 100%;
+     height: auto;
+     display: flex;
+     flex-direction: column;
+  }
+
+}
+@media screen and (max-width:480px){
+    .menu{
+        width: 100%;
+        display: flex ;
+        flex-direction: column;
+        justify-content: flex-start;
+  }
+  .navegacion{
+       width: 100%;
+       height: auto;
+       display: flex;
+       flex-direction: column;
+}
+}
+
+
+    
+   
+
+    
+
+    
+
+
+
+    
