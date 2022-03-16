@@ -34,6 +34,7 @@ h1 {
   color: rgb(25, 95, 97);
   font-size: 1.7rem;
   text-align: center;
+  margin: 20px;
 }
 .card-body {
   border-style: groove;

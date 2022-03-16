@@ -1,11 +1,10 @@
 /*pagina principal */
-*{
-    margin: 0%;
+
+*{  margin: 0%;
     padding: 0%;
 }
-.body1 {
+.body1{
     background: linear-gradient(to right, rgb(102, 176, 201) 10%, rgb(153, 248, 243));
-    margin-top: 5px;
 }
 h1{ /*titulo*/
     color: #4b9b9bd7;
@@ -71,8 +70,6 @@ footer {
     text-align:center;
 }
 .subtitulo{
-    margin: 0%;
-    padding: 5%;
     font-family: 'Dancing Script', cursive;
     color: rgb(55, 13, 73);
     border-style: outset;
@@ -168,15 +165,15 @@ footer {
     font-size: 20px;
 }
 .video1{
-    margin: 3rem;
+    
     text-align: center;
 }
 .video2{
-    margin: 3rem;
+    
     text-align: center;
 }
 .video{
-    margin-right: 3rem;
+    
     text-align: center;
 }
 .calendario{
@@ -199,7 +196,7 @@ h3{
     color:rgb(27, 19, 19);
     font-family: 'Architects Daughter', cursive;
     text-align: center;
-    margin-top: auto 20px;
+    margin: 20px;
 }
 #main-conteiner{
     margin:100%;
@@ -309,35 +306,7 @@ h5{
     font-family: 'Architects Daughter', cursive;  
     text-align: center;
 }
-@media only screen and (max-width: 768px){
-  .menu{
-      width: 100%;
-      display: flex ;
-      flex-direction: column;
-      justify-content: flex-start;
-}
-.navegacion{
-     width: 100%;
-     height: auto;
-     display: flex;
-     flex-direction: column;
-  }
 
-}
-@media screen and (max-width:480px){
-    .menu{
-        width: 100%;
-        display: flex ;
-        flex-direction: column;
-        justify-content: flex-start;
-  }
-  .navegacion{
-       width: 100%;
-       height: auto;
-       display: flex;
-       flex-direction: column;
-}
-}
 
     
    
