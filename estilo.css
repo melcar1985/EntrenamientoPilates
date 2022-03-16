@@ -1,24 +1,11 @@
 /*pagina principal */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
 }
-body {
+.body1 {
     background: linear-gradient(to right, rgb(102, 176, 201) 10%, rgb(153, 248, 243));
-}
-.navegacion{ /*fondo de la barra de navegación */
-    background: rgb(18, 97, 97);
-    background: radial-gradient(circle, rgba(105,191,192,1) 85%, rgba(80, 124, 120, 0.832) 87%);
-    width: auto;
-    height: auto;
-} 
-.img1{ 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-     width: 100px;
-     margin: 5px;
+    margin-top: 5px;
 }
 h1{ /*titulo*/
     color: #4b9b9bd7;
@@ -28,53 +15,20 @@ h1{ /*titulo*/
     text-align: center;
     letter-spacing: 2px;
     font-weight: bold;
-} 
-header nav ul{
-    overflow: hidden;
-    list-style: none;
-
 }
-.volver{
-    text-align: left;
-    color: black;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.menu{ /*color y margen de la barra de navegación*/
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    gap:1rem;
-    font-family: 'shizuru', cursive;
-    font-size: 25px;
-    background-color: #22c0c397;
-}
-
 main{
     padding-top: 5rem;
 }
-.menu li a{ /*palabras del menu*/
-    color: rgb(238, 244, 245);
-    
-}
-.menu li {
-    display: flex;
-    flex-wrap:wrap; 
-    text-align: center;
-    display:inline-block;
-   
-}
-.menu li a:hover{
-    background: rgb(68,209,214);
-    background: linear-gradient(344deg, rgba(68,209,214,0.692612079011292) 28%, rgba(173,224,141,0.3383403532311362) 72%);
+.titulo{
+    margin: auto 0%;
+    padding-top: 3%;
+    font-size: 30px;
 }
 .lema{ 
     font-family:'Caveat', cursive;
     font-size: 20px;
     text-align: center;
-    margin-top: 5%;
+    margin-top: auto;
     color:darkslateblue;border: black;
 }           
 .texto{ /*texto sobre imagenes*/
@@ -104,21 +58,21 @@ footer {
     padding-right: 0px;
     padding-left: 0px;
 }
-.fondo1{
-    margin: 0 auto;
-    padding: auto;
+.fondo1{  /*pagina sobre mi*/
+    margin: 5px auto;
+    padding: 5rem auto;
     background-color:rgb(160,63,251);
     background: radial-gradient(circle, rgba(160,63,251,1) 4%, rgba(89,69,96,0.8270658605238971) 97%);
 }
-.sobremi{       /*pagina sobre mi*/
+.sobremi{      
     margin:auto;
     padding: 2rem;
     background: radial-gradient(circle, rgba(104,171,172,0.8606793059020483) 86%, rgba(112,167,198,0.6449930313922444) 100%);
     text-align:center;
 }
 .subtitulo{
-    margin: 1%;
-    padding: 0;
+    margin: 0%;
+    padding: 5%;
     font-family: 'Dancing Script', cursive;
     color: rgb(55, 13, 73);
     border-style: outset;
@@ -150,23 +104,23 @@ footer {
     gap: 20px;
     border-style:groove;
 }
-.subtitulo2{
+.subtitulo2{ /*actividades*/
     color: #c246c2;
-    align-items: center;
-    text-align: center;
+    justify-content: center;
     border-style:dotted;
 }
-
+.body2{
+    margin: 5px;
+    padding: 0% auto;
+    background: linear-gradient(to right, rgb(102, 176, 201) 10%, rgb(153, 248, 243));
+}
+.container{
+    text-align: center;
+}
 .cabecera{
     border-style:solid;
     border-color:rgb(160,63,251);
     background: radial-gradient(circle, rgba(110, 93, 128, 0.658) 4%, rgba(190, 174, 196, 0.827) 97%);
-}
-.ul2{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    color: aliceblue;
-    text-align: left;
 }
 .subt{
     text-decoration: underline;
@@ -204,6 +158,9 @@ footer {
     text-decoration: underline;
     text-emphasis-color:initial;
 }
+.actividades{
+    text-align: center;
+}
 .parrafo2{
     text-align: center;
     font-style: italic;
@@ -211,15 +168,16 @@ footer {
     font-size: 20px;
 }
 .video1{
-    margin-left: auto;
-    margin-right: auto;
+    margin: 3rem;
+    text-align: center;
 }
-.galeri1{
-    margin:0 auto;
-    gap: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.video2{
+    margin: 3rem;
+    text-align: center;
+}
+.video{
+    margin-right: 3rem;
+    text-align: center;
 }
 .calendario{
     text-align: center;
@@ -235,6 +193,7 @@ footer {
 h3{
     text-align: center;
     font-family:'Architects Daughter', cursive; 
+    padding-top: 0% auto;
 }
 .header{
     color:rgb(27, 19, 19);
@@ -276,6 +235,10 @@ tr{
     width: 70%;
 
 } /*pagina 5 de formulario contacto*/
+.bodycontacto{
+    background: rgb(50,169,191);
+    background: radial-gradient(circle, rgba(50,169,191,0.8326681014202556) 12%, rgba(50,54,167,0.8270658605238971) 90%);
+}
 .page5{
     margin: 0%;
     background-attachment: fixed;
@@ -375,7 +338,6 @@ h5{
        flex-direction: column;
 }
 }
-
 
     
    

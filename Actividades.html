@@ -1,71 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./fotos/favicon_io/favicon-16x16.png">
     <link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" /> <!-- Fuente Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" /> <!-- Fuente Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"><!--Enlace Boostrap-->
     <link rel="stylesheet" type="text/css" href="estilo.css"/>
     <title> Clases de Pilates</title>
-    <!-- Fuente Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
-    <!-- MDB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
-</head>
-<a class="fcc-btn" href="index.html">Volver a inicio</a>
-<header>
-    <div>
-        <!--menu de navegacion-->
-        <NAV>
-            <ul class="menu">
-                <img class="img1" src ="./fotos/logo.jpeg" alt="logo">
-                <li><a href="Acerca de mi.html" style="text-decoration: none;"> Acerca de mi</a></li>
-                <li><a href="Actividades.html" style="text-decoration: none;">Actividades</a></li>
-                <li><a href="Productos.html" style="text-decoration: none;">Productos</a></li>
-                <li><a href="Dias y Horarios.html" style="text-decoration: none;">Dias y Horarios</a></li>
-                <li><a href="contacto.html" style="text-decoration: none;">Contacto</a></li>
-
+   </head>
+   <a class="btn btn-Light" href="index.html" role="button">Inicio</a>
+<body class="body2"> <!--menu de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-light bg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./fotos/logo.jpeg"alt="foto de logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Acerca de mi.html">Acerca de mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Actividades.html">Actividades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Dias y Horarios.html">Cronograma</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="Productos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Shop
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="Productos.html">Productos</a></li>
+                <li><a class="dropdown-item" href="”https://www.dadoa.com.ar/">Indumentaria</a></li>
+                </ul>
+              </li>
             </ul>
-        </NAV>
-    </div>
-    <h2 class="subtitulo2"> Actividades </h2> <!--titulo de encabezado-->
-    </header>
-<body>
-    
-        <main>
-            <section class="entrenamiento"> <!--clase entrenamiento-->
-                <article>  
-                    <ul class="ul2">
-                        <li>Clases de Pilates en reformer con entrenamiento funcional </li>
-                        <li>Ejercicios de estabilidad, coordinación, equilibrio</li>
-                        <li> Rutina de ejercicios personalizada</li>
-                        <li>Ejercicios con la máxima amplitud articular, por lo que participan un gran número de fibras musculares.</li>
-                        <li>Trabajo excelente para perder volumen</li>
-                        <li>Ejercicios que ayudan a moldear y estilizar las piernas, endurecer los brazos y el abdomen, afinar la cadera y levantar los glúteos.</li>
-                    </ul>
+          </div>
+        </div>
+      </nav>
+      <header>
+        <h2 class="actividades">Actividades</h2>
+        </header>
+          <section class="Entrenamiento"> <!--clase entrenamiento-->
+            <article>  
+                <ul class="ul2">
+                <li>Clases de Pilates en reformer con entrenamiento funcional </li>
+                <li>Ejercicios de estabilidad, coordinación, equilibrio</li>
+                <li> Rutina de ejercicios personalizada</li>
+                <li>Ejercicios con la máxima amplitud articular, por lo que participan un gran número de fibras musculares.</li>
+                <li>Trabajo excelente para perder volumen</li>
+                <li>Ejercicios que ayudan a moldear y estilizar las piernas, endurecer los brazos y el abdomen, afinar la cadera y levantar los glúteos.</li>
+                </ul>
+                <div class="media">
+                <video class="video1" src="./fotos/media/ejercitacion.mp4" controls alt="video sobre ejercicios" width="600px"> 
+                </div>
+                <br>
+                <div class="beneficios"> 
+                <h2> <em>Beneficios</em> </h2> 
+                <br>
+                <ul class="beneficios_2">
+                  <li>✔ Mejora la respiración.</li>
+                  <li>✔ Alineación correcta de tu cuerpo.</li>
+                  <li>✔ Aumenta tu fuerza.</li>
+                  <li>✔ Mejora tu estabilidad.</li>
+                  <li>✔ Incrementa tu flexibilidad.</li>
+                  <li>✔ Mejora tu control del cuerpo.</li>
+                  <li>✔ Tonifica tu cuerpo.</li>
+                  <li>✔ Se adapta a cualquier condición física.</li>
+                   </ul>
+                  </div>
                     <br>
-                    <div class="beneficios"> 
-                        <h2> <em>Beneficios</em> </h2> 
-                        <br>
-                      <ul class="beneficios_2">
-                        <li>✔ Mejora la respiración.</li>
-                        <li>✔ Alineación correcta de tu cuerpo.</li>
-                        <li>✔ Aumenta tu fuerza.</li>
-                        <li>✔ Mejora tu estabilidad.</li>
-                        <li>✔ Incrementa tu flexibilidad.</li>
-                        <li>✔ Mejora tu control del cuerpo.</li>
-                        <li>✔ Tonifica tu cuerpo.</li>
-                        <li>✔ Se adapta a cualquier condición física.</li>
-                    </ul>
-                    </div>
-                    <br>
-                    <div class="articulo_novedad">
-                         <h2>
-                         <em class="subt">Senderos</em>  </h2>
-                         <p>
-                             <h4>
+                <div class="articulo_novedad">
+                    <h2>
+                      <em class="subt">Senderos</em>  </h2>
+                        <p>
+                          <h4>
                              Las sierras cordobesas con sus ascensos y descensos, valles y ríos, quebradas y lagos, ofrecen la   
                              posibilidad de hacer múltiples actividades en la naturaleza, disfrutando del buen clima y el aire puro. Y en este territorio tan inmenso
                              y diverso, los “Senderos de Córdoba” invitan a descubrir lugares impresionantes y, muchas veces, sólo accesibles a pie. Así, el senderismo 
@@ -75,17 +94,17 @@
                              cascadas e infinidad de rincones mágicos para disfrutar.</h4> 
                             </p>
                         </div>
-                        <br>
-                        <div class="parrafo2">
-                         <h2>Nuestros senderos</h2>
+                      <br>
+                    <div class="parrafo2">
+                        <h2>Nuestros senderos</h2>
                          <p>
                             Primera salida organizada por Bambu Pilates! Gracias a cada uno por su confianza! 
                             felicitaciones por su logro personal de disfrutar de la naturaleza y superarse cada día un 
                             poquito más!!</p>
-                            <br>
-                             <div class="video1">
-                               <video src="./fotos/media/viaje.mp4" controls alt="video sobre mi primer sendero" width="400px"> 
-                            </div>
+                          <br>
+                            <div class="video2">
+                              <video src="./fotos/media/viaje.mp4" controls alt="video sobre mi primer sendero" width="600px"> 
+                          </div>
                         </div>
                         <br>
                         <hr>
@@ -94,28 +113,47 @@
                             Tonificar los músculos y quemar calorías, ayudando a controlar el peso y moldear la figura. 
                             Mejora las habilidades de coordinación y equilibrio, aumentando significativamente la capacidad pulmonar.
                         </p> 
-                        <h2>Ciclismo</h2>
-                        <div class="galeri1">
-                            <img src="./fotos/bike2.jpeg"alt="foto de paseo">
-                            <img src="./fotos/ciclismo.jpg" alt="ciclismo">
-                            <img src="./fotos/mb.jpg" alt="Mountain Bike">
-                        </div>
-                        
-                         <h5>
-                             <br><em> Consulta las fechas de los senderos 🚶‍♀️ y ciclismo en el calendario de actividades🚴‍♀️</em> </h5>
-                              <br>
+                        <h2 class="container">Ciclismo</h2>
 
-                    </article> 
-                    <div class="calendario">
-                        <h5>Año 2022</h5>
-                        <div class="calendinfo">
+                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                              <img src="./fotos/ciclismo.jpg" class="d-block w-60" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                              <img src="./fotos/bike2.jpeg" class="d-block w-60" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                              <img src="./fotos/mb.jpg" class="d-block w-60" alt="...">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
                         </div>
+                      </body>
+                      <br>
+                      <hr>
+                       <footer>
+                         <div class="calendario">
+                         <h2>Consulta el calendario de actividades</h2>    
+                          <h5>Año 2022</h5>
+                          <div class="calendinfo">
+                          </div>
                         <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=1&bgcolor=%234285F4&ctz=America%2FArgentina%2FCordoba&src=bm44c29iOTg0NDF1NmFvajczbzAyYzk0MWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%238E24AA" 
-                        style="border:solid 1px #777" width="400" height="400" frameborder="0" scrolling="no"></iframe>
-                        </div>
+                      style="border:solid 1px #777" width="400" height="400" frameborder="0" scrolling="no"></iframe>
+                  </div>
                 </section>
-            </main>
-      </body>
+              </main>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+     </footer>
+  </html>
 
                         
                         

@@ -1,15 +1,11 @@
 * {
-  margin: 10px;
+  margin: 3px;
   padding: 0;
 }
-body {
+.bodyshop {
   background-color: rgba(169, 126, 207, 0.801);
-}
-.volver{
-  text-align: left;
-  color: black;
-  font-size: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 5px;
+  padding: 0% auto;
 }
 .menu{
     display: flex;
@@ -17,7 +13,6 @@ body {
     flex-wrap: wrap;
     align-items: center;
     gap:1rem;
-    font-family: 'shizuru', cursive;
     font-size: 25px;
     background-color: #22c0c397;
     color: aliceblue;
@@ -31,11 +26,12 @@ body {
   display:inline-block;
 }
 .menu li a:hover{
-  background: rgb(68,209,214);
-  background: linear-gradient(344deg, rgba(68,209,214,0.692612079011292) 28%, rgba(173,224,141,0.3383403532311362) 72%);
+  background: rgb(36, 225, 231);
+  background: linear-gradient(344deg, rgba(13, 78, 80, 0.693) 28%, rgba(173,224,141,0.3383403532311362) 72%);
 }
 h1 {
-  font-family: "shizuru", cursive;
+  font-family:"Architects Daughter", cursive;
+  color: rgb(25, 95, 97);
   font-size: 1.7rem;
   text-align: center;
 }
