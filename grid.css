@@ -95,6 +95,8 @@ h1 {
 .contenedor .extra {
   /*terapia alternativa =aside*/
   text-align: justify;
+  border-radius: 5px;
+  border-style: dotted;
   font-family: "Architects Daughter", cursive;
   font-size: 1.5rem;
   text-align: center;
