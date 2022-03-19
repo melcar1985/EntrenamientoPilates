@@ -1,44 +1,50 @@
 /*pagina principal */
 
-*{  margin: 0%;
-    padding: 0%;
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box
 }
 .body1{
     background: linear-gradient(to right, rgb(102, 176, 201) 10%, rgb(153, 248, 243));
+    margin: auto 0;
+    padding: auto 0;
+}
+.navbar{
+    background: rgb(58,177,180);
+    background: linear-gradient(180deg, rgba(58,177,180,0.5553571770505077) 0%, rgba(51,217,230,0.45451684091605393) 71%, rgba(19,107,121,1) 96%);
+}
+.nav-link {
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    justify-content: space-between;
+    word-spacing: 10px;
 }
 h1{ /*titulo*/
-    color: #4b9b9bd7;
+    color: #157272e8;
     font-family:'Dancing Script', cursive;
-    font-size: 6rem;
     word-spacing: 1px;
     text-align: center;
-    letter-spacing: 2px;
-    font-weight: bold;
-}
-main{
-    padding-top: 5rem;
-}
-.titulo{
+    letter-spacing: 5px;
     margin: auto 0%;
     padding-top: 3%;
     font-size: 30px;
 }
+
 .lema{ 
     font-family:'Caveat', cursive;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
-    margin-top: auto;
-    color:darkslateblue;border: black;
+    
 }           
 .texto{ /*texto sobre imagenes*/
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
+    font-family:'Caveat', cursive;
+    font-size: 30px;
     margin-top: 80px;
     text-align: center;
     padding: auto;
 }
 .redes{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Caveat', cursive;
     font-size: 1rem;
     word-spacing: 5px;
     text-align: left;
@@ -52,21 +58,32 @@ footer {
 }
 .grupoCards {
     justify-content: center;
+    margin-top: 20px;
 }
 .grupoCards div {
     padding-right: 0px;
     padding-left: 0px;
+    margin-top: 30px;
+}
+.card{
+    border-radius: 10px;
+}
+.card:hover{
+    transform:scale(1.1);
+    transition: transform 3s;
+}
+.card{
+        overflow:unset;
 }
 .fondo1{  /*pagina sobre mi*/
-    margin: 5px auto;
-    padding: 5rem auto;
+    margin: auto;
+    padding: auto;
     background-color:rgb(160,63,251);
     background: radial-gradient(circle, rgba(160,63,251,1) 4%, rgba(89,69,96,0.8270658605238971) 97%);
 }
 .sobremi{      
     margin:auto;
     padding: 2rem;
-    background: radial-gradient(circle, rgba(104,171,172,0.8606793059020483) 86%, rgba(112,167,198,0.6449930313922444) 100%);
     text-align:center;
 }
 .subtitulo{
@@ -77,9 +94,9 @@ footer {
 }
 /*efecto*/         
 .subtitulo{
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-name: aparecer;
-    animation-iteration-count: infinite;
+    animation-iteration-count:infinite;
  }
  @keyframes aparecer {
     0% {
@@ -91,16 +108,25 @@ footer {
  }
  
 .parrafo{
-    font-family:"Architects Daughter", cursive;
-    font-size: 20px;
+    font-family:'Caveat', cursive;
+    font-size: 30px;
     color: aliceblue;
     line-height: normal;
 }
-.fotos{
-    margin:0;
-    gap: 20px;
-    border-style:groove;
+.f1{
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 30px;
 }
+.f2{
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 30px;
+}
+.final{
+    margin-top: 20px;
+    padding-bottom: 20px;
+}    
 .subtitulo2{ /*actividades*/
     color: #c246c2;
     justify-content: center;
@@ -121,22 +147,27 @@ footer {
 }
 .subt{
     text-decoration: underline;
-    color: #e063ce;
+    color: #c42cad;
     font-family: 'Caveat', cursive;
+    border-style: groove;
+    text-align: center;
 }
 .entrenamiento{
     margin: 1rem;
 }
 .beneficios{
     margin-bottom: 5rem;
-    font-family: 'Shizuru', cursive;
+    font-family: 'Caveat', cursive;
     color: azure;
-    font-size: 20px;
     text-align:justify;
-    border-style: dotted;
-}
-.beneficios_2{
     list-style-type:none;
+    font-size: 30px;
+}
+ul{
+    list-style: none;
+}
+.borde{
+    border-style: groove;
 }
 .articulo_novedad{
     margin: 1px;
@@ -151,28 +182,30 @@ footer {
     text-shadow: 1px 1px rgb(102, 126, 25);
 }
 .h2{
+    font-family: 'Caveat', cursive;
     text-align: center;
     text-decoration: underline;
     text-emphasis-color:initial;
 }
 .actividades{
     text-align: center;
+    border-style: groove;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
 }
 .parrafo2{
     text-align: center;
     font-style: italic;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Caveat', cursive;
     font-size: 20px;
 }
-.video1{
-    
-    text-align: center;
+.video{
+    text-align:center;
+    margin-left: auto;
+    margin-right: 10px auto;
+    padding: auto;
 }
 .video2{
-    
-    text-align: center;
-}
-.video{
     
     text-align: center;
 }
@@ -181,37 +214,31 @@ footer {
     font-size: 20px;
 }
     /* pagina 4 de dias y horarios*/
-.page4{
-    background-color:rgb(144,87,198);
-    margin-left: auto 10%;
-    margin-right: auto 10%;
-    background: radial-gradient(circle, rgba(144,87,198,0.6225840678068102) 6%, rgba(50,163,167,0.8270658605238971) 57%);;
-}
 h3{
     text-align: center;
-    font-family:'Architects Daughter', cursive; 
+    font-family:'Caveat', cursive;
     padding-top: 0% auto;
+    font-size: 40px;
 }
 .header{
     color:rgb(27, 19, 19);
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Caveat', cursive;
     text-align: center;
-    margin: 20px;
+    margin-top: 10px;
 }
-#main-conteiner{
+#main-container{
     margin:100%;
     width: 100%;
 }
-
 .tablas{
     color:rgb(27, 19, 19);
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Caveat', cursive;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     margin-left: auto 100px;
     margin-right: auto 100px;
 }
@@ -221,9 +248,11 @@ h3{
 }
 tr{
     text-align: center;
+    border-spacing: 5rem;
 }
 .pago{
     text-align: center;
+    border-style: groove;
 }
 .piedepagina{
     margin-left: 100px auto;
@@ -232,15 +261,9 @@ tr{
     width: 70%;
 
 } /*pagina 5 de formulario contacto*/
-.bodycontacto{
-    background: rgb(50,169,191);
-    background: radial-gradient(circle, rgba(50,169,191,0.8326681014202556) 12%, rgba(50,54,167,0.8270658605238971) 90%);
-}
 .page5{
     margin: 0%;
     background-attachment: fixed;
-    background: rgb(50,169,191);
-    background: radial-gradient(circle, rgba(50,169,191,0.8326681014202556) 12%, rgba(50,54,167,0.8270658605238971) 90%);
 }
 .contact{
     margin: auto;
@@ -253,8 +276,8 @@ tr{
     border-style:double;
 }
  input{
-     width: 50%;
-     margin-bottom: 20px;
+     width: 60%;
+     margin-bottom: 10px;
      padding: 5%;
      font-family: Arial, Helvetica, sans-serif;
      box-sizing: border-box;
@@ -273,28 +296,14 @@ tr{
     margin-bottom: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.botones{
-    text-align: center;
-}
-.boton1{
- background: #b99cb5;
- color:#f3f0f3;
- margin:auto;
- text-align: center;
- color: rgb(14, 14, 26);
-}
-.boton1:hover{
-   color: rgb(70, 70, 187);
-}
-.boton2{
-    background: #b99cb5;
-    color:#f3f0f3;
+.col-sm-10{
+    color:#4e79b3;
     margin:auto;
     text-align: center;
-    color: rgb(14, 14, 26); 
+    color: rgb(14, 14, 26);
 }
-.boton2:hover{
-    color: rgb(70, 70, 187); 
+.boton1:hover{
+   color: rgb(70, 70, 187); 
 } 
 .pago{
     text-align: center;
@@ -307,8 +316,6 @@ h5{
     text-align: center;
 }
 
-
-    
    
 
     

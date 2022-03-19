@@ -1,11 +1,21 @@
 * {
-  margin: 3px;
+  margin: 0;
   padding: 0;
 }
 .bodyshop {
-  background-color: rgba(169, 126, 207, 0.801);
+  background: rgb(158,58,180);
+  background: linear-gradient(36deg, rgba(158,58,180,0.3984944319524685) 0%, rgba(22,214,221,0.558158297498687) 50%, rgba(27,182,207,1) 100%); 
   margin: 5px;
   padding: 0% auto;
+}
+.navbar{
+  background: rgb(58,177,180);
+  background: linear-gradient(180deg, rgba(58,177,180,0.5553571770505077) 0%, rgba(51,217,230,0.45451684091605393) 71%, rgba(19,107,121,1) 96%);
+}
+.nav-link {
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
+  justify-content: space-between;
 }
 .menu{
     display: flex;
@@ -18,7 +28,6 @@
     color: aliceblue;
     list-style-type: none;
 }
-
 .menu li {
   display: flex;
   flex-wrap:wrap; 
@@ -29,10 +38,10 @@
   background: rgb(36, 225, 231);
   background: linear-gradient(344deg, rgba(13, 78, 80, 0.693) 28%, rgba(173,224,141,0.3383403532311362) 72%);
 }
-h1 {
-  font-family:"Architects Daughter", cursive;
+.animar {
+  font-family:'Caveat', cursive;
   color: rgb(25, 95, 97);
-  font-size: 1.7rem;
+  font-size: 30px;
   text-align: center;
   margin: 20px;
 }
@@ -66,7 +75,7 @@ h1 {
     rgba(68, 191, 214, 0.692612079011292) 28%,
     rgba(151, 204, 202, 0.40129555240064774) 94%
   );
-  font-family: "Architects Daughter", cursive;
+  font-family: 'Caveat', cursive;
   font-size: 1.5rem;
   text-align: center;
   align-items: center;
@@ -88,17 +97,17 @@ h1 {
     rgba(151, 153, 204, 0.8270658605238971) 90%
   );
   font-size: 20px;
-  font-family: "Architects Daughter", cursive;
+  font-family: 'Caveat', cursive;
 
   grid-area: contenido;
 }
 .contenedor .extra {
   /*terapia alternativa =aside*/
   text-align: justify;
-  border-radius: 5px;
+  border-radius: 10px;
   border-style: dotted;
-  font-family: "Architects Daughter", cursive;
-  font-size: 1.5rem;
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
   text-align: center;
   background: rgb(68, 105, 214);
   background: linear-gradient(
@@ -120,9 +129,9 @@ img {
     width: 100%;
     height: auto;
     list-style-type: none;
-    font-size: 1rem;
+    font-size: 30px;
     text-align: center;
-    font-family: "Architects Daughter", cursive;
+    font-family: 'Caveat', cursive;
     background-color: rgb(76, 211, 216);
     background: linear-gradient(
     90deg,
@@ -145,8 +154,8 @@ img {
     rgba(151, 153, 204, 0.8270658605238971) 94%
   );
   text-align: center;
-  font-family: "Architects Daughter", cursive;
-  font-size: 1rem;
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
   height: auto;
   width: 100%;
 
