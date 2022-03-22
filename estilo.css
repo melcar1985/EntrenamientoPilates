@@ -13,44 +13,37 @@
     background: rgb(58,177,180);
     background: linear-gradient(180deg, rgba(58,177,180,0.5553571770505077) 0%, rgba(51,217,230,0.45451684091605393) 71%, rgba(19,107,121,1) 96%);
 }
-.nav-link {
-    font-family: 'Caveat', cursive;
-    font-size: 30px;
-    justify-content: space-between;
-    word-spacing: 10px;
+.nav-link{
+    font-family: 'Comfortaa', cursiva;
+    font-size: 40p;
+    word-spacing: 20px;
 }
-h1{ /*titulo*/
+.tituloprincipal{ /*titulo*/
     color: #157272e8;
-    font-family:'Dancing Script', cursive;
-    word-spacing: 1px;
+    font-family:'Pacifico', cursive;
+    word-spacing: 5px;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
     margin: auto 0%;
     padding-top: 3%;
     font-size: 30px;
 }
-
-.lema{ 
-    font-family:'Caveat', cursive;
-    font-size: 30px;
+.anime2{ 
+    font-family:'Comfortaa', cursiva;
+    font-size: 25px;
     text-align: center;
-    
-}           
+    color: rgb(13, 92, 66);
+    }           
 .texto{ /*texto sobre imagenes*/
-    font-family:'Caveat', cursive;
-    font-size: 30px;
+    font-family:'Comfortaa', cursiva;
+    font-size: 20px;
     margin-top: 80px;
     text-align: center;
     padding: auto;
 }
-.redes{
-    font-family: 'Caveat', cursive;
-    font-size: 1rem;
-    word-spacing: 5px;
-    text-align: left;
-    color: black;
-}
 footer {
+    padding-bottom: 20px;
+    background-color: #66b0c9;
     margin-top: 100px;
     text-align: center;
     background-color: rgb(50,169,191);
@@ -74,58 +67,6 @@ footer {
 }
 .card{
         overflow:unset;
-}
-.fondo1{  /*pagina sobre mi*/
-    margin: auto;
-    padding: auto;
-    background-color:rgb(160,63,251);
-    background: radial-gradient(circle, rgba(160,63,251,1) 4%, rgba(89,69,96,0.8270658605238971) 97%);
-}
-.sobremi{      
-    margin:auto;
-    padding: 2rem;
-    text-align:center;
-}
-.subtitulo{
-    font-family: 'Dancing Script', cursive;
-    color: rgb(55, 13, 73);
-    border-style: outset;
-    font-size: 30px;    
-}
-/*efecto*/         
-.subtitulo{
-    animation-duration: 3s;
-    animation-name: aparecer;
-    animation-iteration-count:infinite;
- }
- @keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
- }
- 
-.parrafo{
-    font-family:'Caveat', cursive;
-    font-size: 30px;
-    color: aliceblue;
-    line-height: normal;
-}
-.f1{
-    margin-left: 20px;
-    margin-right: 20px;
-    gap: 30px;
-}
-.f2{
-    margin-left: 20px;
-    margin-right: 20px;
-    gap: 30px;
-}
-.final{
-    margin-top: 20px;
-    padding-bottom: 20px;
 }    
 .subtitulo2{ /*actividades*/
     color: #c246c2;
@@ -159,7 +100,7 @@ footer {
     margin-bottom: 5rem;
     font-family: 'Caveat', cursive;
     color: azure;
-    text-align:justify;
+    text-align:center;
     list-style-type:none;
     font-size: 30px;
 }
@@ -197,7 +138,8 @@ ul{
     text-align: center;
     font-style: italic;
     font-family: 'Caveat', cursive;
-    font-size: 20px;
+    font-size: 30px;
+    color:rgb(32, 70, 70);
 }
 .video{
     text-align:center;
@@ -213,15 +155,15 @@ ul{
     text-align: center;
     font-size: 20px;
 }
-    /* pagina 4 de dias y horarios*/
+    /* pagina cronograma*/
 h3{
     text-align: center;
     font-family:'Caveat', cursive;
     padding-top: 0% auto;
-    font-size: 40px;
+    font-size: 20px;
 }
 .header{
-    color:rgb(27, 19, 19);
+    color:rgb(33, 70, 62);
     font-family: 'Caveat', cursive;
     text-align: center;
     margin-top: 10px;
@@ -231,8 +173,8 @@ h3{
     width: 100%;
 }
 .tablas{
-    color:rgb(27, 19, 19);
-    font-family: 'Caveat', cursive;
+    color:rgb(20, 83, 85);
+    font-family: 'Pacifico', cursive;;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -253,6 +195,7 @@ tr{
 .pago{
     text-align: center;
     border-style: groove;
+    margin-top: 20px;
 }
 .piedepagina{
     margin-left: 100px auto;
@@ -260,7 +203,7 @@ tr{
     text-align: center;
     width: 70%;
 
-} /*pagina 5 de formulario contacto*/
+} /*pagina formulario contacto*/
 .page5{
     margin: 0%;
     background-attachment: fixed;
@@ -308,11 +251,11 @@ tr{
 .pago{
     text-align: center;
     font-size: 20px;
-    font-family:'Architects Daughter', cursive;  
+    font-family:Verdana, Geneva, Tahoma, sans-serif;  
 }
 h5{
     font-size: 20px;
-    font-family: 'Architects Daughter', cursive;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
     text-align: center;
 }
 

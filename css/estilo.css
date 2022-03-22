@@ -1,0 +1,50 @@
+/*variablescolor*/
+body {
+  /*pagina Profesora*/
+  background-color: #846c9ba1; }
+
+nav {
+  background: #3ab1b4;
+  background: linear-gradient(180deg, rgba(58, 177, 180, 0.555357) 0%, rgba(51, 217, 230, 0.454517) 71%, #136b79 96%); }
+  nav a {
+    font-family: "Comfortaa", cursiva;
+    font-size: 20px;
+    justify-content: space-around;
+    word-spacing: 10px; }
+
+main {
+  margin: auto;
+  padding: 2rem;
+  text-align: center; }
+  main h2 {
+    font-family: "Comfortaa", cursiva;
+    color: #370d49;
+    font-size: 20px; }
+    main h2:hover {
+      color: pink; }
+    main h2:hover {
+      border-style: outset;
+      transform: scale(1.1);
+      transition: transform 2s;
+      animation-duration: 3s; }
+  main p {
+    font-family: "Caveat", cursive;
+    font-size: 30px;
+    color: #f0f8ff;
+    line-height: normal;
+    margin-top: 20px; }
+  main img {
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 30px; }
+
+footer {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  background-color: #66b0c9; }
+  footer h2 {
+    text-align: center;
+    font-size: 'Caveat', cursive;
+    font-size: 20px; }
+  footer div {
+    text-align: center; }

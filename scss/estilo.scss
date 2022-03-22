@@ -1,0 +1,73 @@
+/*variablescolor*/
+$color-fondo: #846c9ba1;
+$color-titulos: #370d49;
+$color-p: #f0f8ff;
+$estilo-title:'Comfortaa', cursiva;
+$esilo-p: 'Caveat', cursive;
+
+body{  /*pagina Profesora*/
+        background-color: $color-fondo;
+}
+nav{
+        background: rgb(58,177,180);
+        background: linear-gradient(180deg, rgba(58,177,180,0.5553571770505077) 0%, rgba(51,217,230,0.45451684091605393) 71%, rgba(19,107,121,1) 96%);
+      
+         a{
+        font-family: $estilo-title;
+        font-size: 20px;
+        justify-content:space-around;
+        word-spacing: 10px;
+        }
+        }
+
+main{      //anidacion
+      margin:auto;
+      padding: 2rem;
+      text-align:center;
+    
+    h2{
+        font-family: $estilo-title;
+        color: $color-titulos;
+        font-size: 20px;
+           &:hover{
+            color: pink;
+            }
+            
+           &:hover{
+            border-style: outset;
+            transform:scale(1.1);
+            transition: transform 2s;
+            animation-duration:3s;
+            }
+          }
+    p{
+        font-family: $esilo-p;
+        font-size: 30px;
+        color: $color-p;
+        line-height: normal;
+        margin-top: 20px;
+        }    
+     
+    img{
+            margin-left: 20px;
+            margin-right: 20px;
+            gap: 30px;} 
+}        
+  
+footer{
+     margin-top: 20px;
+     padding-bottom: 20px;
+     background-color: #66b0c9;
+
+     h2{
+        text-align: center;
+        font-size:'Caveat', cursive ;
+        font-size: 20px;
+     }
+
+     div{
+        text-align: center;
+     }
+}
+
+
