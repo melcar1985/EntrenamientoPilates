@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <enlace rel="hoja de estilo" href="css/animate.css">
     <link rel="shortcut icon" href="./fotos/favicon_io/favicon-16x16.png"><!-- Fuente favicon -->
     <!-- Fuente estilo Caveat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,14 +16,14 @@
     <link rel="stylesheet" type="text/css" href="estilo.css"/>
     <title> Clases de Pilates</title>
    </head>
-   <body class="body2"> <!--menu de navegacion-->
+   <body class="body1"> <!--menu de navegacion-->
     <nav class="navbar navbar-expand-lg navbar-light bg">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"><img src="./fotos/logo.jpg"alt="foto de logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
            </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="Acerca de mi.html">PROFESORA</a>
@@ -50,26 +51,26 @@
         </div>
       </nav>
       <header>
-        <h2 class="actividades">ACTIVIDADES</h2>
-        </header>
-        <br>
-         <section class="beneficios"> <!--clase beneficios-->
-            <article>  
-                <ul>
-                <br>
-                <li>Clases de Pilates en reformer con entrenamiento funcional </li>
-                <li>Ejercicios de estabilidad, coordinación, equilibrio</li>
-                <li> Rutina de ejercicios personalizada</li>
-                <li>Ejercicios con la máxima amplitud articular, por lo que participan un gran número de fibras musculares.</li>
-                <li>Trabajo excelente para perder volumen</li>
-                <li>Ejercicios que ayudan a moldear y estilizar las piernas, endurecer los brazos y el abdomen, afinar la cadera y levantar los glúteos.</li>
-                </ul>
-                <div class="video">
-                <video src="./fotos/media/ejercitacion.mp4" controls alt="video sobre ejercicios" width="500px">  
+        <h2 class="actividades wow fadeInDown">ACTIVIDADES</h2>
+      </header>
+      <br>
+      <section class="beneficios"> <!--clase beneficios-->
+        <article>
+          <ul>
+            <br>
+            <li>Clases de Pilates en reformer con entrenamiento funcional </li>
+            <li>Ejercicios de estabilidad, coordinación, equilibrio</li>
+            <li> Rutina de ejercicios personalizada</li>
+            <li>Ejercicios con la máxima amplitud articular, por lo que participan un gran número de fibras musculares.</li>
+            <li>Trabajo excelente para perder volumen</li>
+            <li>Ejercicios que ayudan a moldear y estilizar las piernas, endurecer los brazos y el abdomen, afinar la cadera y levantar los glúteos.</li>
+            </ul>
+            <div class="video">
+              <video src="./fotos/media/ejercitacion.mp4" controls alt="video sobre ejercicios" width="500px">
                 </div>
                 <br>
                 <div> 
-                <h2 class="borde">BENEFICIOS </h2> 
+              <h2 class="borde">BENEFICIOS </h2> 
                 <br>
                 <ul>
                   <li>✔ Mejora la respiración.</li>
@@ -81,9 +82,9 @@
                   <li>✔ Tonifica tu cuerpo.</li>
                   <li>✔ Se adapta a cualquier condición física.</li>
                    </ul>
-                  </div>
+               </div>
                     <br>
-                <div class="articulo_novedad">
+                    <div class="articulo_novedad">
                     <h2>
                       <em class="subt">SENDEROS</em>  </h2>
                         <p>
@@ -115,32 +116,36 @@
                             Tonificar los músculos y quemar calorías, ayudando a controlar el peso y moldear la figura. 
                             Mejora las habilidades de coordinación y equilibrio, aumentando significativamente la capacidad pulmonar.
                         </p> 
-                        <h2 class="subt">Ciclismo</h2>
+                        <h2 class="subt">Ciclismo y actividades</h2>
 
-                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                           <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-interval="1000">
-                              <img src="./fotos/ciclismo.jpg" class="d-block w-60" alt="...">
+                            <div class="carousel-item active ">
+                              <img src="./fotos/ciclismo.jpg" class="d-block w-60 col-sm-5" alt="...">
                             </div>
-                            <div class="carousel-item" data-bs-interval="1000">
-                              <img src="./fotos/bike2.jpeg" class="d-block w-60" alt="...">
+                            <div class="carousel-item">
+                              <img src="./fotos/bike2.jpeg" class="d-block w-60 col-sm-5" alt="...">
                             </div>
-                            <div class="carousel-item" data-bs-interval="1000">
-                              <img src="./fotos/mb.jpg" class="d-block w-60" alt="...">
+                            <div class="carousel-item">
+                              <img src="./fotos/mb.jpg" class="d-block w-60 col-sm-5" alt="...">
                             </div>
                           </div>
-                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                           </button>
-                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                           </button>
                         </div>
+                        <script src="js/wow.min.js"></script> 
+                        <script> 
+                        new WOW().init(); 
+                        </script>
                       </body>
                       <br>
-                      <hr>
+                      <br>
                        <footer>
                          <div class="calendario">
                          <h2>Consulta el calendario de actividades</h2>    

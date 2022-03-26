@@ -1,13 +1,12 @@
-/*pagina principal */
+     /*pagina principal */
 
 *{  margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 .body1{
-    background: linear-gradient(to right, rgb(102, 176, 201) 10%, rgb(153, 248, 243));
-    margin: auto 0;
-    padding: auto 0;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(39,39,75,0.6702031154258579) 66%, rgba(99,130,136,1) 94%);
 }
 .navbar{
     background: rgb(58,177,180);
@@ -15,8 +14,8 @@
 }
 .nav-link{
     font-family: 'Comfortaa', cursiva;
-    font-size: 40p;
-    word-spacing: 20px;
+    font-size: 30p;
+    word-spacing: 30px;
 }
 .tituloprincipal{ /*titulo*/
     color: #157272e8;
@@ -30,13 +29,13 @@
 }
 .anime2{ 
     font-family:'Comfortaa', cursiva;
-    font-size: 25px;
+    font-size: 1.2em;
     text-align: center;
-    color: rgb(13, 92, 66);
+    color: rgb(183, 214, 204);
     }           
 .texto{ /*texto sobre imagenes*/
     font-family:'Comfortaa', cursiva;
-    font-size: 20px;
+    font-size: 1.2em;
     margin-top: 80px;
     text-align: center;
     padding: auto;
@@ -67,24 +66,17 @@ footer {
 }
 .card{
         overflow:unset;
-}    
-.subtitulo2{ /*actividades*/
+} 
+.card-text{
+    font-size: 1em;
+}   
+.subtitulo2{       /*actividades*/
     color: #c246c2;
     justify-content: center;
     border-style:dotted;
 }
-.body2{
-    margin: 5px;
-    padding: 0% auto;
-    background: linear-gradient(to right, rgb(102, 176, 201) 10%, rgb(153, 248, 243));
-}
 .container{
     text-align: center;
-}
-.cabecera{
-    border-style:solid;
-    border-color:rgb(160,63,251);
-    background: radial-gradient(circle, rgba(110, 93, 128, 0.658) 4%, rgba(190, 174, 196, 0.827) 97%);
 }
 .subt{
     text-decoration: underline;
@@ -92,9 +84,6 @@ footer {
     font-family: 'Caveat', cursive;
     border-style: groove;
     text-align: center;
-}
-.entrenamiento{
-    margin: 1rem;
 }
 .beneficios{
     margin-bottom: 5rem;
@@ -151,93 +140,74 @@ ul{
     
     text-align: center;
 }
+.carousel-inner{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000
+    }
 .calendario{
     text-align: center;
     font-size: 20px;
 }
-    /* pagina cronograma*/
+             /* pagina cronograma*/
 h3{
     text-align: center;
-    font-family:'Caveat', cursive;
+    font-family:'Comfortaa', cursiva;
     padding-top: 0% auto;
     font-size: 20px;
+    color:aliceblue;
 }
 .header{
-    color:rgb(33, 70, 62);
+    color:rgb(200, 223, 218);
     font-family: 'Caveat', cursive;
     text-align: center;
     margin-top: 10px;
 }
-#main-container{
-    margin:100%;
-    width: 100%;
-}
 .tablas{
-    color:rgb(20, 83, 85);
-    font-family: 'Pacifico', cursive;;
+    color:rgb(200, 223, 218);
+    font-family: 'Comfortaa', cursiva;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
-    font-size: 30px;
-    margin-left: auto 100px;
-    margin-right: auto 100px;
+    font-size: 1.2em;
 }
 .th, td{
-    border:solid 1px black;
+    border:solid 1px white;
     text-align: center;
-}
-tr{
-    text-align: center;
-    border-spacing: 5rem;
 }
 .pago{
     text-align: center;
     border-style: groove;
-    margin-top: 20px;
+    margin-top: 30px;
+    color: aliceblue;
 }
 .piedepagina{
-    margin-left: 100px auto;
-    margin-right: 100px auto;
+    margin-left: 30px auto;
+    margin-right: 30px auto;
+    padding-top: 10px auto;
     text-align: center;
     width: 70%;
 
-} /*pagina formulario contacto*/
-.page5{
-    margin: 0%;
-    background-attachment: fixed;
-}
+}           /*pagina formulario contacto*/
 .contact{
     margin: auto;
-    width: 400px;
+    width: 350px;
     background:#22c0c397;
     padding: 10px 20px;
-    box-sizing: border-box;
     margin-top: 20px;
-    border-radius: 7px;
-    border-style:double;
+    border-radius: 10px;
+    border-style:groove;
 }
  input{
-     width: 60%;
-     margin-bottom: 10px;
-     padding: 5%;
+     width: 50%;
+     margin-bottom: 20px;
+     padding: auto;
      font-family: Arial, Helvetica, sans-serif;
-     box-sizing: border-box;
      font-size: 17px;
      text-align: center;
-}
- label{
-    display: inline-block;
-    width: 80px;
-}
- legend{
-    font-size: 30px;
-    color: #f3f0f3;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .col-sm-10{
     color:#4e79b3;
@@ -247,19 +217,34 @@ tr{
 }
 .boton1:hover{
    color: rgb(70, 70, 187); 
-} 
-.pago{
-    text-align: center;
-    font-size: 20px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;  
 }
 h5{
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;  
     text-align: center;
 }
+            /*Medias Queries nAV*/
+@media (max-width: 476px) {
+    div.container-fluid {
+    font-size: 5px;
+    }
+}
+    @media (max-width: 780px) {
+    div.container-fluid {
+    font-size: 15px;
+    }
+}
+@media (max-width: 992px) {
+    div.container-fluid {
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width: 780px) and (max-width:992) {
+    div.video{
+        width: 200px;
 
-   
+    }
+}
 
     
 

@@ -1,7 +1,7 @@
 /*variablescolor*/
 body {
   /*pagina Profesora*/
-  background-color: #846c9ba1;
+  background-color: #7a5d7a;
 }
 
 nav {
@@ -12,7 +12,7 @@ nav {
 
 nav a {
   font-family: "Comfortaa", cursiva;
-  font-size: 20px;
+  font-size: 15px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   word-spacing: 10px;
@@ -26,7 +26,7 @@ main {
 
 main h2 {
   font-family: "Comfortaa", cursiva;
-  color: #370d49;
+  color: #785f83;
   font-size: 20px;
 }
 
@@ -42,13 +42,11 @@ main h2:hover {
   transition: -webkit-transform 2s;
   transition: transform 2s;
   transition: transform 2s, -webkit-transform 2s;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
 }
 
 main p {
   font-family: "Caveat", cursive;
-  font-size: 30px;
+  font-size: 20px;
   color: #f0f8ff;
   line-height: normal;
   margin-top: 20px;

@@ -1,20 +1,20 @@
 /*variablescolor*/
-$color-fondo: #846c9ba1;
-$color-titulos: #370d49;
+$color-fondo:rgb(122, 93, 122);
+$color-titulos: #785f83;
 $color-p: #f0f8ff;
 $estilo-title:'Comfortaa', cursiva;
-$esilo-p: 'Caveat', cursive;
+$estilo-p: 'Caveat', cursive;
 
-body{  /*pagina Profesora*/
+ body{  /*pagina Profesora*/
         background-color: $color-fondo;
-}
+ }
 nav{
         background: rgb(58,177,180);
         background: linear-gradient(180deg, rgba(58,177,180,0.5553571770505077) 0%, rgba(51,217,230,0.45451684091605393) 71%, rgba(19,107,121,1) 96%);
       
          a{
         font-family: $estilo-title;
-        font-size: 20px;
+        font-size: 15px;
         justify-content:space-around;
         word-spacing: 10px;
         }
@@ -25,7 +25,7 @@ main{      //anidacion
       padding: 2rem;
       text-align:center;
     
-    h2{
+      h2{
         font-family: $estilo-title;
         color: $color-titulos;
         font-size: 20px;
@@ -37,12 +37,11 @@ main{      //anidacion
             border-style: outset;
             transform:scale(1.1);
             transition: transform 2s;
-            animation-duration:3s;
             }
           }
     p{
-        font-family: $esilo-p;
-        font-size: 30px;
+        font-family: $estilo-p;
+        font-size: 20px;
         color: $color-p;
         line-height: normal;
         margin-top: 20px;
@@ -52,7 +51,7 @@ main{      //anidacion
             margin-left: 20px;
             margin-right: 20px;
             gap: 30px;} 
-}        
+ }        
   
 footer{
      margin-top: 20px;
