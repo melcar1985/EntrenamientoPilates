@@ -18,7 +18,7 @@
     word-spacing: 30px;
 }
 .tituloprincipal{ /*titulo*/
-    color: #157272e8;
+    color: #0e3d3de8;
     font-family:'Pacifico', cursive;
     word-spacing: 5px;
     text-align: center;
@@ -40,35 +40,29 @@
     text-align: center;
     padding: auto;
 }
-footer {
-    padding-bottom: 20px;
-    background-color: #66b0c9;
-    margin-top: 100px;
-    text-align: center;
-    background-color: rgb(50,169,191);
-    background: radial-gradient(circle, rgba(50,169,191,0.8326681014202556) 10%, rgba(50,163,167,0.8270658605238971) 92%);;
+.iconos-sociales img{ 
+    transition:all 0.5s ease-out; border-radius:50px;
+    }
+.iconos-sociales img:hover{
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    transform:translate(0px, -10px); 
 }
-.grupoCards {
+.iconos-sociales{ 
+    display: flex;
     justify-content: center;
-    margin-top: 20px;
 }
-.grupoCards div {
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-top: 30px;
+footer {
+    background-color:black;
 }
+   
 .card{
-    border-radius: 10px;
-}
-.card:hover{
-    transform:scale(1.1);
-    transition: transform 3s;
-}
-.card{
-        overflow:unset;
+    border-radius: 5px;
 } 
 .card-text{
     font-size: 1em;
+}
+.carousel{
+    inherits: 2000;
 }   
 .subtitulo2{       /*actividades*/
     color: #c246c2;
@@ -222,6 +216,7 @@ h5{
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;  
     text-align: center;
+    color: white;
 }
             /*Medias Queries nAV*/
 @media (max-width: 476px) {
