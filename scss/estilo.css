@@ -1,7 +1,7 @@
 /*variablescolor*/
 body {
   /*pagina Profesora*/
-  background-color: #7a5d7a;
+  background-color: #3d354b;
 }
 
 nav {
@@ -24,18 +24,17 @@ main {
   text-align: center;
 }
 
-main h2 {
+main .titular {
   font-family: "Comfortaa", cursiva;
-  color: #785f83;
+  color: #161118;
   font-size: 20px;
 }
 
-main h2:hover {
+main .titular:hover {
   color: pink;
 }
 
-main h2:hover {
-  border-style: outset;
+main .titular:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition: -webkit-transform 2s;
@@ -61,7 +60,7 @@ main img {
 footer {
   margin-top: 20px;
   padding-bottom: 20px;
-  background-color: #66b0c9;
+  background-color: black;
 }
 
 footer h2 {
