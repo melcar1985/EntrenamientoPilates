@@ -1,16 +1,38 @@
 /*variablescolor*/
-body {
-  /*pagina Profesora*/
-  background-color: #3d354b;
+.actividades, .body1 header, .body1 main .parrafo2 h2 {
+  text-align: center;
+  border-style: groove;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  background: rgba(49, 82, 74, 0.507);
+  color: white;
+  text-decoration: underline;
+  -webkit-text-emphasis-color: initial;
+          text-emphasis-color: initial;
 }
 
-nav {
+.borde, .body1 main article .borde {
+  border-style: groove;
+  font-weight: bold;
+  color: white;
+  background: rgba(113, 138, 113, 0.61);
+}
+
+/*pagina 2 Profesora*/
+body {
   background: #3ab1b4;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 177, 180, 0.555357)), color-stop(71%, rgba(51, 217, 230, 0.454517)), color-stop(96%, #136b79));
   background: linear-gradient(180deg, rgba(58, 177, 180, 0.555357) 0%, rgba(51, 217, 230, 0.454517) 71%, #136b79 96%);
 }
 
-nav a {
+body nav {
+  background: #3ab1b4;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 177, 180, 0.555357)), color-stop(71%, rgba(51, 217, 230, 0.454517)), color-stop(96%, #136b79));
+  background: linear-gradient(180deg, rgba(58, 177, 180, 0.555357) 0%, rgba(51, 217, 230, 0.454517) 71%, #136b79 96%);
+}
+
+body nav a {
   font-family: "Comfortaa", cursiva;
   font-size: 15px;
   -ms-flex-pack: distribute;
@@ -18,23 +40,23 @@ nav a {
   word-spacing: 10px;
 }
 
-main {
+body main {
   margin: auto;
   padding: 2rem;
   text-align: center;
 }
 
-main .titular {
+body main .titular {
   font-family: "Comfortaa", cursiva;
-  color: #161118;
+  color: #d3c5d8;
   font-size: 20px;
 }
 
-main .titular:hover {
-  color: pink;
+body main .titular:hover {
+  background: pink;
 }
 
-main .titular:hover {
+body main .titular:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition: -webkit-transform 2s;
@@ -43,15 +65,15 @@ main .titular:hover {
   transition: transform 2s, -webkit-transform 2s;
 }
 
-main p {
+body main p {
   font-family: "Caveat", cursive;
-  font-size: 20px;
-  color: #f0f8ff;
+  font-size: 30px;
+  color: #d3c5d8;
   line-height: normal;
   margin-top: 20px;
 }
 
-main img {
+body main img {
   margin-left: 20px;
   margin-right: 20px;
   gap: 30px;
@@ -60,16 +82,113 @@ main img {
 footer {
   margin-top: 20px;
   padding-bottom: 20px;
-  background-color: black;
+  background-color: #518580;
 }
 
-footer h2 {
+footer h5 {
   text-align: center;
   font-size: 'Caveat', cursive;
   font-size: 20px;
+  color: #d3c5d8;
 }
 
 footer div {
   text-align: center;
+}
+
+footer .btn-toolbar {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.body1 {
+  background-image: url("../fotos/bambu.png");
+}
+
+.body1 main article .beneficios {
+  margin-bottom: 5rem;
+  font-family: 'Caveat', cursive;
+  color: black;
+  background: rgba(185, 178, 178, 0.096);
+  font-weight: bolder;
+  text-align: center;
+  list-style-type: none;
+  font-size: 30px;
+}
+
+.body1 main article .beneficios ul li {
+  list-style: none;
+}
+
+.body1 main article .video {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.body1 main div.articulo_novedad {
+  margin: 1px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  background: #bbaec8;
+  background: radial-gradient(circle, #bbaec8 4%, rgba(89, 69, 96, 0.827066) 97%);
+  color: #eaf7c9;
+  text-shadow: 1px 1px #667e19;
+}
+
+.body1 main div.articulo_novedad .subt {
+  text-decoration: underline;
+  color: #dadada;
+  font-family: 'Caveat', cursive;
+  border-style: groove;
+  text-align: center;
+}
+
+.body1 main .parrafo2 {
+  text-align: center;
+  font-style: italic;
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
+  font-weight: bolder;
+  color: #050304;
+  background: #dadada5e;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.body1 main .parrafo2 .video2 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.body1 main .parrafo2 .actividades .swiper, .body1 main .parrafo2 header .swiper, .body1 main .parrafo2 h2 .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.body1 main .parrafo2 .actividades .swiper-slide, .body1 main .parrafo2 header .swiper-slide, .body1 main .parrafo2 h2 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #494552;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.body1 main .parrafo2 .actividades .swiper-slide img, .body1 main .parrafo2 header .swiper-slide img, .body1 main .parrafo2 h2 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=estilo.css.map */
