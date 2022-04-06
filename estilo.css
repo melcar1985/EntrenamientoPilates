@@ -6,7 +6,7 @@
 }
 /*pagina principal */
 .body1{
-    background-image: url(./fotos/—Pngtree—fresh\ bamboo\ poster\ bac.jpg);
+    background-image: url(./fotos/bambu\ fondo.jpg);
 
 }
 .navbar{
@@ -60,8 +60,14 @@
     display: flex;
     justify-content: center;
 }
+.youtube{
+    display: flex;
+    justify-content:center;
+}
 .card{
     border-radius: 5px;
+    margin-bottom: 60%;
+    margin-top: 60px;
 } 
 .card-text{
     font-size: 1em;
@@ -69,24 +75,32 @@
 .carousel{
     inherits: 2000;
 }
-footer {
-    background-color:black;
-    font-size: 20px;
-    margin-top: 40px;
-    height: 9em;
-}
-.marca{
-    text-align:right;
-    color: rgb(40, 36, 36);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    justify-content: space-around;
-}
+.footer{
+    width: 100%;
+    height: 160px;
+    background-color: black;
+    bottom: 0;
+    text-align: center;
+}  
 .btn-toolbar{
     text-align: center;
     font-size: 25px;
-    padding: auto;
+    margin-top: 10px;
 }
+.marca{
+    text-align:right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(244, 234, 234);
+    margin-bottom: 20px;
+    margin-right: 15px;
+}
+.maps{
+    margin-left: 10px;
+    display: flex;
+    justify-content: left;
+}
+
 /*pagina actividades en SASS*/
              
 h3{             /* pagina cronograma*/
@@ -106,7 +120,7 @@ h3{             /* pagina cronograma*/
 }
 .tablas{
     color:black;
-    background: #3a31314f;
+    background: #556d554f;
     font-family: 'Comfortaa', cursiva;
     display: flex;
     align-items: center;
@@ -123,17 +137,23 @@ h3{             /* pagina cronograma*/
 .pago{
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 5em;
     color: black;
     font-weight: bolder;
     font-size: 20px;
+
 }
-.piedepagina{
+.botonpago{
+    display: flex;
+    justify-content: center;
+}
+.piedepagina2{
+    background-color: black;
     margin-left: 30px auto;
     margin-right: 30px auto;
     padding-top: 10px auto;
     text-align: center;
-    width: 70%;
+    width: 100%;
 
 }           /*pagina formulario contacto*/
 .contact{
@@ -142,6 +162,7 @@ h3{             /* pagina cronograma*/
     background:#22c0c397;
     padding: 10px 20px;
     margin-top: 20px;
+    margin-bottom: 30px;
     border-radius: 10px;
     border-style:groove;
 }

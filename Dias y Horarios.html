@@ -115,47 +115,54 @@
                  <br>
                  <img src="./fotos/banner_promociones_de_compras.jpg" alt="fotos de formas de pago" width="400">
                 </div>
-              </main>
+                <div class="botonpago" id ="smart-button-container"> <!--boton a pagos-->
+                  <div style="width: 200px;">
+                    <div id="paypal-button-container"></div>
+                  </div>
+              </div>
+              <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+           <script>
+                function initPayPalButton() {
+                  paypal.Buttons({
+                    style: {
+                      shape: 'pill',
+                      color: 'blue',
+                      layout: 'vertical',
+                      label: 'paypal',
+                      },
+             createOrder: function(data, actions) {
+                      return actions.order.create({
+                        purchase_units: [{"description":"Recibimos todas las tarjetas","amount":{"currency_code":"USD","value":2500}}]
+                      });
+                    },
+             onApprove: function(data, actions) {
+                      return actions.order.capture().then(function(orderData) {
+                        
+                        // Full available details
+                        console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+            
+                        // Show a success message within this page, e.g.
+                        const element = document.getElementById('paypal-button-container');
+                        element.innerHTML = '';
+                        element.innerHTML = '<h3>Thank you for your payment!</h3>';});},onError: function(err) {
+                      console.log(err);}
+                  }).render('#paypal-button-container');
+                } initPayPalButton();
+          </script>
+          </main>
               <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
               </body>
               <footer class="piedepagina2">
-                <div id="smart-button-container"> <!--boton a pagos-->
-                    <div style="text-align: center;">
-                      <div id="paypal-button-container"></div>
-                    </div>
-                </div>
-                <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
-             <script>
-                  function initPayPalButton() {
-                    paypal.Buttons({
-                      style: {
-                        shape: 'pill',
-                        color: 'blue',
-                        layout: 'vertical',
-                        label: 'paypal',
-                        },
-               createOrder: function(data, actions) {
-                        return actions.order.create({
-                          purchase_units: [{"description":"Recibimos todas las tarjetas","amount":{"currency_code":"USD","value":2500}}]
-                        });
-                      },
-               onApprove: function(data, actions) {
-                        return actions.order.capture().then(function(orderData) {
-                          
-                          // Full available details
-                          console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-              
-                          // Show a success message within this page, e.g.
-                          const element = document.getElementById('paypal-button-container');
-                          element.innerHTML = '';
-                          element.innerHTML = '<h3>Thank you for your payment!</h3>';});},onError: function(err) {
-                        console.log(err);}
-                    }).render('#paypal-button-container');
-                  } initPayPalButton();
-            </script>
-            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-            <div class="btn-group me-3" role="group" aria-label="First group">
+                <h5>Nuestras Redes</h5>
+        <div class="iconos-sociales">
+          <a href="https://www.facebook.com/pilatesBambu" target="_blank"><img loading="lazy" alt="Sígueme en Facebook" height="35" width="35" style:tex-aling="center" src=" https://1.bp.blogspot.com/-Pop-U7OywXs/YPhkfrImyiI/AAAAAAAAA1Y/UBnVfTK9j2U-bIUqwZYMNSQPvz_l06mbwCPcBGAYYCw/s0/facebook-icono.png" title="Sígueme en Facebook"/></a>
+          <a href="https://www.instagram.com/noe_gomezx/?hl=es-la" target="_blank"><img loading="lazy" alt="Sígueme en Instagram" height="35" width="35" src="https://1.bp.blogspot.com/-VFfOISywV0c/YPhkeRXuRQI/AAAAAAAAA1M/L75S9Usg5AovunH2Y-VzqJbaaY1LuK3eACPcBGAYYCw/s0/Instagram-icono.png" title="Sígueme en Instagram"/></a>
+          <a href="https://wa.me/c/5493513848339" target="_blank"><img loading="lazy" alt="Sígueme en WhatsApp" height="35" width="35" src=" https://1.bp.blogspot.com/-Vc_W7xraNnc/YPhkfwQExQI/AAAAAAAAA1c/dI72v37UC0EGJd7jWvKWYD3WMwZ7eER7gCPcBGAYYCw/s0/whatsapp-icono.png" title="Sígueme en WhatsApp"/></a>
+          <a href="https://twitter.com/home" target="_blank"><img loading="lazy" alt=" Sígueme en Twitter" height="35" width="35" src=" https://1.bp.blogspot.com/-2JwTJZxg1AU/YPhkfB0DdjI/AAAAAAAAA1c/tDKdU6tS0A0lt4YegGUVd7k-9hguYz82ACPcBGAYYCw/s0/Twitter-icono.png" title="Sígueme en Twitter"/></a>
+        </div>    
+          <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+              <div class="btn-group me-3" role="group" aria-label="First group">
               <a href="./index.html"><button type="button" btn btn-link> >> Inicio</button></a>
             </div>
           </div>

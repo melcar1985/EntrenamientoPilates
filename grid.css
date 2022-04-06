@@ -3,7 +3,7 @@
   padding: 0;
 }
 .bodyshop {
-  background-image: url(./fotos/—Pngtree—fresh\ bamboo\ poster\ bac.jpg);
+  background-image: url(./fotos/bambu\ fondo.jpg);
   margin: 5px;
   padding: 0% auto;
 
@@ -12,23 +12,18 @@
   background: rgb(58,177,180);
   background: linear-gradient(180deg, rgba(58,177,180,0.5553571770505077) 0%, rgba(51,217,230,0.45451684091605393) 71%, rgba(19,107,121,1) 96%);
 }
-.nav-link {
+.nav-link{
   font-family: 'Comfortaa', cursiva;
+  font-size: 30p;
+  word-spacing: 30px;
+  font-weight: bold;
+}
+.nav-link:hover{
   font-size: 20px;
-  justify-content: space-between;
+  background: #dadada;
 }
-h2{
-  font-family: 'Comfortaa', cursiva;
-  font-size: 30px;
-  text-align: center;
-  margin: auto;
-}
-h3{
-  font-family: 'Comfortaa', cursiva;
-  font-size: 20px;
-  text-align: center;
-}
-.menu{
+
+  .menu{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

@@ -1,128 +1,142 @@
 /*variablescolor*/
-.actividades, .body1 header, .body1 main .parrafo2 h2 {
+.actividades, .body1 .body1 header, .body1 .body1 main h2 {
   text-align: center;
   border-style: groove;
-  font-family: 'Caveat', cursive;
+  font-family: "Comfortaa", cursiva;
   font-size: 20px;
-  font-weight: bold;
-  background: rgba(49, 82, 74, 0.507);
-  color: white;
+  background: rgba(105, 217, 189, 0.371);
+  color: #201c1c;
   text-decoration: underline;
   text-emphasis-color: initial; }
 
-.borde, .body1 main article .borde {
+.borde, .body1 main .listabeneficios, .body1 .body1 main .borde {
   border-style: groove;
   font-weight: bold;
   color: white;
-  background: rgba(113, 138, 113, 0.61); }
+  background: rgba(116, 176, 116, 0.61);
+  font-size: 20px; }
+
+.footer, .body1 footer {
+  width: 100%;
+  height: 160px;
+  background-color: black;
+  bottom: 0;
+  text-align: center; }
+
+.redes, .body1 footer {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center; }
+
+.btn-toolbar, .body1 footer {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 10px; }
+
+.video, .body1 .body1 main .video, .body1 .body1 main .parrafo2 .video2 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  min-width: 200px; }
 
 /*pagina 2 Profesora*/
-body {
-  background: #3ab1b4;
-  background: linear-gradient(180deg, rgba(58, 177, 180, 0.555357) 0%, rgba(51, 217, 230, 0.454517) 71%, #136b79 96%); }
-  body nav {
+.body1 {
+  background-image: url("../fotos/bambu fondo.jpg"); }
+  .body1 nav {
     background: #3ab1b4;
     background: linear-gradient(180deg, rgba(58, 177, 180, 0.555357) 0%, rgba(51, 217, 230, 0.454517) 71%, #136b79 96%); }
-    body nav a {
+    .body1 nav a {
       font-family: "Comfortaa", cursiva;
       font-size: 15px;
       justify-content: space-around;
       word-spacing: 10px; }
-  body main {
+  .body1 main {
     margin: auto;
     padding: 2rem;
     text-align: center; }
-    body main .titular {
-      font-family: "Comfortaa", cursiva;
-      color: #d3c5d8;
-      font-size: 20px; }
-      body main .titular:hover {
-        background: pink; }
-      body main .titular:hover {
-        transform: scale(1.1);
-        transition: transform 2s; }
-    body main p {
+    .body1 main .titular {
+      font-family: "Caveat", cursive;
+      color: #1a292a;
+      font-size: 30px;
+      border-style: groove; }
+    .body1 main p {
       font-family: "Caveat", cursive;
       font-size: 30px;
-      color: #d3c5d8;
+      color: #1a292a;
       line-height: normal;
       margin-top: 20px; }
-    body main img {
+    .body1 main img {
       margin-left: 20px;
       margin-right: 20px;
       gap: 30px; }
-
-footer {
-  margin-top: 20px;
-  padding-bottom: 20px;
-  background-color: #518580; }
-  footer h5 {
-    text-align: center;
-    font-size: 'Caveat', cursive;
-    font-size: 20px;
-    color: #d3c5d8; }
-  footer div {
-    text-align: center; }
-  footer .btn-toolbar {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px; }
-
-.body1 {
-  background-image: url("../fotos/bambu.png"); }
-  .body1 main article .beneficios {
-    margin-bottom: 5rem;
-    font-family: 'Caveat', cursive;
-    color: black;
-    background: rgba(185, 178, 178, 0.096);
-    font-weight: bolder;
-    text-align: center;
-    list-style-type: none;
-    font-size: 30px; }
-    .body1 main article .beneficios ul li {
-      list-style: none; }
-  .body1 main article .video {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center; }
-  .body1 main div.articulo_novedad {
-    margin: 1px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    background: #bbaec8;
-    background: radial-gradient(circle, #bbaec8 4%, rgba(89, 69, 96, 0.827066) 97%);
-    color: #eaf7c9;
-    text-shadow: 1px 1px #667e19; }
-    .body1 main div.articulo_novedad .subt {
-      text-decoration: underline;
-      color: #dadada;
+  .body1 footer {
+    bottom: 0; }
+    .body1 footer .marca {
+      text-align: right;
+      font-size: 15px;
+      color: white;
+      margin-bottom: 20px;
+      margin-right: 15px; }
+    .body1 footer div {
+      text-align: center; }
+    .body1 footer .youtube {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px; }
+    .body1 footer .iconos-sociales img {
+      transition: all 0.5s ease-out;
+      border-radius: 50px; }
+    .body1 footer .iconos-sociales img:hover {
+      box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+      transform: translate(0px, -10px); }
+  .body1 .body1 {
+    background-image: url("../fotos/bambu fondo.jpg"); }
+    .body1 .body1 main article .beneficios {
+      margin-bottom: 5rem;
       font-family: 'Caveat', cursive;
-      border-style: groove;
-      text-align: center; }
-  .body1 main .parrafo2 {
-    text-align: center;
-    font-style: italic;
-    font-family: 'Caveat', cursive;
-    font-size: 30px;
-    font-weight: bolder;
-    color: #050304;
-    background: #dadada5e;
-    margin-right: 5px;
-    margin-left: 5px; }
-    .body1 main .parrafo2 .video2 {
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center; }
-    .body1 main .parrafo2 .actividades .swiper, .body1 main .parrafo2 header .swiper, .body1 main .parrafo2 h2 .swiper {
-      width: 100%;
-      height: 100%; }
-    .body1 main .parrafo2 .actividades .swiper-slide, .body1 main .parrafo2 header .swiper-slide, .body1 main .parrafo2 h2 .swiper-slide {
+      color: black;
+      background: rgba(185, 178, 178, 0.096);
+      font-weight: bolder;
       text-align: center;
-      font-size: 18px;
-      background: #494552;
-      /* Center slide text vertically */
+      list-style-type: none;
+      font-size: 30px; }
+    .body1 .body1 main div.articulo_novedad {
+      margin: 1px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      text-align: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+      background: #bbaec8;
+      background: radial-gradient(circle, #bbaec8 4%, rgba(89, 69, 96, 0.827066) 97%);
+      color: #eaf7c9;
+      text-shadow: 1px 1px #667e19; }
+      .body1 .body1 main div.articulo_novedad .subt {
+        text-decoration: underline;
+        color: #dadada;
+        font-family: 'Caveat', cursive;
+        border-style: groove;
+        text-align: center; }
+    .body1 .body1 main .parrafo2 {
+      text-align: center;
+      font-style: italic;
+      font-family: 'Caveat', cursive;
+      font-size: 30px;
+      font-weight: bolder;
+      color: #050304;
+      background: #dadada5e;
+      margin-right: 5px;
+      margin-left: 5px; }
+    .body1 .body1 main .swipswiper-wrapperer {
+      width: 50%;
+      height: 100%; }
+    .body1 .body1 main .swiper-slide {
+      text-align: center;
+      font-size: 10px;
+      background: #4ec694;
+      /* Galeria de imagenes */
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -135,7 +149,21 @@ footer {
       -ms-flex-align: center;
       -webkit-align-items: center;
       align-items: center; }
-    .body1 main .parrafo2 .actividades .swiper-slide img, .body1 main .parrafo2 header .swiper-slide img, .body1 main .parrafo2 h2 .swiper-slide img {
-      display: block;
+    .body1 .body1 main .swiper-slide img {
       width: 100%;
       height: 100%; }
+  .body1 footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #f4eaea;
+    margin-bottom: 5px;
+    margin-right: 15px; }
+    .body1 footer .marca {
+      text-align: right;
+      font-size: 15px;
+      color: white;
+      margin-bottom: 20px;
+      margin-right: 15px; }
+  .body1 .youtube {
+    display: flex;
+    justify-content: center; }

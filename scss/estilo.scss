@@ -1,114 +1,143 @@
 /*variablescolor*/
 
-$color-titulos: #d3c5d8;
+$color-titulos: #1a292a;
 $color-p: #ced5db;
 $estilo-title:'Comfortaa', cursiva;
 $estilo-p: 'Caveat', cursive;
-$color-footer:rgb(81, 133, 128);
+$color-footer:rgb(5, 5, 5);
 
-//Extend//
+//Aplico Extend//
 .actividades{
     text-align: center;
     border-style: groove;
-    font-family: 'Caveat', cursive;
+    font-family: $estilo-title;
     font-size: 20px;
-    font-weight: bold;
-    background: rgba(49, 82, 74, 0.507);
-    color: white;
+    background: rgba(105, 217, 189, 0.371);
+    color: rgb(32, 28, 28);
     text-decoration: underline;
     text-emphasis-color:initial;
 }
 .borde{
 
-      border-style: groove;
-      font-weight: bold;
-      color: white;
-      background: rgba(113, 138, 113, 0.61);
+   border-style: groove;
+   font-weight: bold;
+   color: white;
+   background: rgba(116, 176, 116, 0.61);
+   font-size: 20px;}
+
+.footer{
+   width: 100%;
+   height: 160px;
+   background-color: black;
+   bottom: 0;
+   text-align: center;
 }
-
-/*pagina 2 Profesora*/
-body{  
-   background:rgb(58,177,180);
-   background: linear-gradient(180deg, rgba(58,177,180,0.5553571770505077) 0%, rgba(51,217,230,0.45451684091605393) 71%, rgba(19,107,121,1) 96%);;
+.redes{
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+   text-align: center;
+}
+.btn-toolbar{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.video{
+         text-align: center;
+         margin-left: auto;
+         margin-right: auto;  
+         max-width: 700px;
+         min-width: 200px;}
  
-nav{
-        background: rgb(58,177,180);
-        background: linear-gradient(180deg, rgba(58,177,180,0.5553571770505077) 0%, rgba(51,217,230,0.45451684091605393) 71%, rgba(19,107,121,1) 96%);
-      
-         a{
-        font-family: $estilo-title;
-        font-size: 15px;
-        justify-content:space-around;
-        word-spacing: 10px;
-        }
-        }
+         //Aplico Mixin//
+   
+   @mixin marca-mc{
 
-main{      //anidación
+   text-align: right;
+   font-size: 15px;
+   color: white;
+   margin-bottom: 20px;
+   margin-right: 15px; 
+ }
+    /*pagina 2 Profesora*/ 
+
+ .body1{  
+        
+    background-image: url("../fotos/bambu\ fondo.jpg");
+
+ nav{
+      background: rgb(58,177,180);
+      background: linear-gradient(180deg, rgba(58,177,180,0.5553571770505077) 0%, rgba(51,217,230,0.45451684091605393) 71%, rgba(19,107,121,1) 96%);
+      
+      a{
+      font-family: $estilo-title;
+      font-size: 15px;
+      justify-content:space-around;
+      word-spacing: 10px;}
+      }
+
+ main{      //anidación
       margin:auto;
       padding: 2rem;
       text-align:center;
     
       .titular{
-        font-family: $estilo-title;
+        font-family: $estilo-p;
         color: $color-titulos;
-        font-size: 20px;
-           &:hover{
-            background: pink;
-            }
-            
-           &:hover{
-            transform:scale(1.1);
-            transition: transform 2s;
-            }
-          }
-    p{
+        font-size: 30px;
+        border-style:groove;}
+          
+      .listabeneficios{
+         @extend.borde}
+      p{
         font-family: $estilo-p;
         font-size: 30px;
         color: $color-titulos;
         line-height: normal;
-        margin-top: 20px;
-        }    
+        margin-top: 20px;}    
      
-    img{
-            margin-left: 20px;
-            margin-right: 20px;
-            gap: 30px;} 
- }        
-} 
-footer{
-     margin-top: 20px;
-     padding-bottom: 20px;
-     background-color: $color-footer;
+     img{
+         margin-left: 20px;
+         margin-right: 20px;
+         gap: 30px;} 
+ }
+      footer{
+        @extend.footer;
+        @extend.redes;
+        @extend.btn-toolbar;
 
-     h5{
-        text-align: center;
-        font-size:'Caveat', cursive ;
-        font-size: 20px;
-        color: $color-titulos;
-     }
+   .marca{
+        @include marca-mc;}
+        bottom: 0;
+    
+   div{
+        text-align: center;}
 
-     div{
-        text-align: center;
-     }
-     .btn-toolbar{
+   .youtube{
+        display: flex;
+        justify-content:center;
+        margin-top: 15px;} 
         
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
+   .iconos-sociales img{ 
+         transition:all 0.5s ease-out; border-radius:50px;
+         }
+   .iconos-sociales img:hover{
+         box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+         transform:translate(0px, -10px); 
      }
-     
-}
-//pagina 3 actividades//incluyendo Extends
+   }
+ //pagina 3 actividades//incluyendo Extends
  
-.body1{
-   background-image: url("");
+   .body1{
+    background-image: url("../fotos/bambu\ fondo.jpg");
    
-   header{
+    header{
        @extend.actividades}
-
-   main{
+       
+    main{
    
-   
-   article{
+    article{
       .beneficios{
          margin-bottom: 5rem;
          font-family: 'Caveat', cursive;
@@ -117,23 +146,16 @@ footer{
          font-weight: bolder;
          text-align:center;
          list-style-type:none;
-         font-size: 30px;
-
-      ul{
-         li{
-            list-style: none;
-         }
+         font-size: 30px;}
       }
-      
-      }
+       
       .video{
-         margin-left: auto;
-         margin-right: auto;
-         text-align: center;}
+            @extend.video}
+      
       
       .borde{
          @extend.borde}
-      }
+      
       div.articulo_novedad{
          margin: 1px;
          padding-left: 1rem;
@@ -147,7 +169,7 @@ footer{
          text-shadow: 1px 1px rgb(102, 126, 25);
      
       
-         .subt{
+      .subt{
             text-decoration: underline;
             color: #dadada;
             font-family: 'Caveat', cursive;
@@ -166,25 +188,23 @@ footer{
          margin-right: 5px;
          margin-left: 5px;
 
-         .video2{
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-        }
+      .video2{
+            @extend.video
+          }
+ }
          h2{
            @extend.actividades}
-        .actividades{
-         .swiper {
-            width: 100%;
-            height: 100%;
-        }
+           
+           .swipswiper-wrapperer{
+            width: 50%;
+            height: 100%;}
         
-        .swiper-slide {
+      .swiper-slide {
             text-align: center;
-            font-size: 18px;
-            background: rgb(73, 69, 82);
+            font-size: 10px;
+            background: rgb(78, 198, 148);
         
-            /* Center slide text vertically */
+            /* Galeria de imagenes */
             display: -webkit-box;
             display: -ms-flexbox;
             display: -webkit-flex;
@@ -198,12 +218,28 @@ footer{
             -webkit-align-items: center;
             align-items: center;
         }
-        .swiper-slide img {
-            display: block;
+      .swiper-slide img {
+            
             width: 100%;
             height: 100%;}
-        }
-     }
-  }  
-  
-}
+         }
+   }
+   footer{
+   
+   @extend.footer;
+   @extend.btn-toolbar;
+    
+   .marca{
+      
+      @include marca-mc;}
+      
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      color: rgb(244, 234, 234);
+      margin-bottom: 5px;
+      margin-right: 15px;
+   }
+   .youtube{
+      display: flex;
+      justify-content:center;}
+ }
