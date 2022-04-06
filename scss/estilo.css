@@ -40,12 +40,12 @@
   margin-top: 10px;
 }
 
-.video, .body1 .body1 main .video, .body1 .body1 main .parrafo2 .video2 {
+.video, .body1 .body1 main .video, .body1 .body1 main .parrafo2 .video {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   max-width: 700px;
-  min-width: 200px;
+  min-width: 350px;
 }
 
 /*pagina 2 Profesora*/
@@ -181,30 +181,22 @@
   margin-left: 5px;
 }
 
-.body1 .body1 main .swipswiper-wrapperer {
-  width: 50%;
-  height: 100%;
+.body1 .body1 main .swiper {
+  width: 300px;
+  height: 300px;
+  padding: 50px;
 }
 
 .body1 .body1 main .swiper-slide {
-  text-align: center;
-  font-size: 10px;
-  background: #4ec694;
-  /* Galeria de imagenes */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
 }
 
 .body1 .body1 main .swiper-slide img {
+  display: block;
   width: 100%;
-  height: 100%;
 }
 
 .body1 footer {
