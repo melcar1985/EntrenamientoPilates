@@ -1,5 +1,5 @@
 /*variablescolor*/
-.actividades, .body1 .body1 header, .body1 .body1 main h2 {
+.actividades, .body1 .body1 header, .body1 .body1 h2 {
   text-align: center;
   border-style: groove;
   font-family: "Comfortaa", cursiva;
@@ -19,7 +19,7 @@
   font-size: 20px;
 }
 
-.footer, .body1 footer {
+.footer, .body1 footer, footer {
   width: 100%;
   height: 160px;
   background-color: black;
@@ -34,13 +34,13 @@
   text-align: center;
 }
 
-.btn-toolbar, .body1 footer {
+.btn-toolbar, .body1 footer, footer {
   text-align: center;
   font-size: 25px;
   margin-top: 10px;
 }
 
-.video, .body1 .body1 main .video, .body1 .body1 main .parrafo2 .video {
+.video, .body1 .body1 main .video, .body1 .body1 .parrafo2 .video {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -78,6 +78,7 @@
   color: #1a292a;
   font-size: 30px;
   border-style: groove;
+  text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87;
 }
 
 .body1 main p {
@@ -88,9 +89,9 @@
   margin-top: 20px;
 }
 
-.body1 main img {
-  margin-left: 20px;
-  margin-right: 20px;
+.body1 main .f1f2 {
+  margin-left: 10px;
+  margin-right: 10px;
   gap: 30px;
 }
 
@@ -148,28 +149,24 @@
   font-size: 30px;
 }
 
-.body1 .body1 main div.articulo_novedad {
-  margin: 1px;
+.body1 .body1 main .articulo_novedad {
   padding-left: 1rem;
   padding-right: 1rem;
   text-align: center;
+  border-style: groove;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
-  background: #bbaec8;
-  background: radial-gradient(circle, #bbaec8 4%, rgba(89, 69, 96, 0.827066) 97%);
-  color: #eaf7c9;
-  text-shadow: 1px 1px #667e19;
 }
 
-.body1 .body1 main div.articulo_novedad .subt {
+.body1 .body1 main .subt {
   text-decoration: underline;
-  color: #dadada;
+  color: #4b5341;
   font-family: 'Caveat', cursive;
   border-style: groove;
   text-align: center;
 }
 
-.body1 .body1 main .parrafo2 {
+.body1 .body1 .parrafo2 {
   text-align: center;
   font-style: italic;
   font-family: 'Caveat', cursive;
@@ -177,29 +174,18 @@
   font-weight: bolder;
   color: #050304;
   background: #dadada5e;
-  margin-right: 5px;
-  margin-left: 5px;
 }
 
-.body1 .body1 main .swiper {
-  width: 300px;
-  height: 300px;
-  padding: 50px;
-}
-
-.body1 .body1 main .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-}
-
-.body1 .body1 main .swiper-slide img {
-  display: block;
+.body1 .body1 .swiper {
   width: 100%;
+  height: 100%;
 }
 
-.body1 footer {
+.body1 .body1 .swiper-slide {
+  overflow: hidden;
+}
+
+footer {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   color: #f4eaea;
@@ -207,7 +193,7 @@
   margin-right: 15px;
 }
 
-.body1 footer .marca {
+footer .marca {
   text-align: right;
   font-size: 15px;
   color: white;
@@ -215,7 +201,7 @@
   margin-right: 15px;
 }
 
-.body1 .youtube {
+footer .youtube {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

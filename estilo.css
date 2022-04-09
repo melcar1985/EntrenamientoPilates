@@ -7,7 +7,7 @@
 /*pagina principal */
 .body1{
     background-image: url(./fotos/bambu\ fondo.jpg);
-
+    
 }
 .navbar{
     background: rgba(19, 59, 59, 0.925);
@@ -32,6 +32,7 @@
     margin: auto 0%;
     padding-top: 3%;
     font-size: 36px;
+    text-shadow: 0 0 0.2em rgba(81, 125, 34, 0.707), 0 0 0.2em rgba(96, 130, 140, 0.888);
 }
 .anime2{ 
     font-family:'Comfortaa', cursiva;
@@ -66,8 +67,8 @@
 }
 .card{
     border-radius: 5px;
-    margin-bottom: 60%;
-    margin-top: 60px;
+    margin-bottom: 30%;
+    margin-top: 20px;
 } 
 .card-text{
     font-size: 1em;
@@ -117,22 +118,25 @@ h3{             /* pagina cronograma*/
     text-align: center;
     margin-top: 10px;
     font-weight: bolder;
+    font-size: 30px;
 }
 .tablas{
-    color:black;
-    background: #556d554f;
     font-family: 'Comfortaa', cursiva;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 20px;
+    overflow-x: auto;
 }
-.th, td{
-    border:solid 1px white;
+td{
+    border:solid 2px rgb(11, 4, 4);
     text-align: center;
-    font-weight: bolder;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+tr{
+    text-align: center;
 }
 .pago{
     text-align: center;
@@ -162,7 +166,7 @@ h3{             /* pagina cronograma*/
     background:#22c0c397;
     padding: 10px 20px;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     border-radius: 10px;
     border-style:groove;
 }
@@ -195,10 +199,36 @@ h5{
     text-align: center;
     color: white;
 }
+   
+/*Medidas*/
 
+   @media only screen and (min-width: 360px) and (max-width: 768px) {
+	.body1{
+        width: 100%;
+    }
+}
+    @media only screen and (max-width: 450px){
 
-
-    
+     main{
+         width: 100%;
+     }   
+    .tablas{
+        min-width: 250px;
+        font-size: 15px;
+}
+    tr{
+        font-size: 15px;
+}  
+    td{
+        font-size: 15px;
+}
+    .header{
+        font-size: 20px;
+}
+    .footer{
+        width:100%;
+}
+     }
 
     
 
