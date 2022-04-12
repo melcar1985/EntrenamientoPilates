@@ -1,0 +1,20 @@
+
+main{     
+    margin:auto;
+    padding: 2rem;
+    text-align:center;
+  
+    .titular{
+      font-family: $estilo-p;
+      color: $color-titulos;
+      font-size: 30px;
+      border-style:groove;
+      text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87}
+
+
+    .f1f2{
+       margin-left: 10px;
+       margin-right: 10px;
+       gap: 30px;
+    } 
+  }

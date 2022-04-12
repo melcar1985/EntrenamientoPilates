@@ -14,23 +14,21 @@
   background: rgba(116, 176, 116, 0.61);
   font-size: 20px; }
 
-.footer, footer {
+.footer2, footer {
   width: 100%;
   height: 160px;
   background-color: black;
-  bottom: 0;
   text-align: center; }
 
-.redes, footer {
+.redes, .footer2 {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   text-align: center; }
 
-.btn-toolbar, footer {
+.btn-toolbar, .footer2, footer {
   text-align: center;
-  font-size: 25px;
-  margin-top: 10px; }
+  font-size: 25px; }
 
 .video, .body1 main .video {
   text-align: center;
@@ -46,49 +44,89 @@
     background: linear-gradient(180deg, rgba(58, 177, 180, 0.555357) 0%, rgba(51, 217, 230, 0.454517) 71%, #136b79 96%); }
     .body1 nav .nav-link {
       font-family: "Comfortaa", cursiva;
-      font-size: 15px;
+      font-size: 20px;
       justify-content: space-around;
-      word-spacing: 10px; }
+      word-spacing: 10px;
+      font-weight: bold; }
       .body1 nav .nav-link:hover {
         font-size: 20px;
         background: #ced5db; }
-  .body1 main {
-    margin: auto;
-    padding: 2rem;
-    text-align: center; }
-    .body1 main .titular {
-      font-family: "Caveat", cursive;
-      color: #1a292a;
-      font-size: 30px;
-      border-style: groove;
-      text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87; }
-  .body1 .f1f2 {
+
+main {
+  margin: auto;
+  padding: 2rem;
+  text-align: center; }
+  main .titular {
+    font-family: "Caveat", cursive;
+    color: #1a292a;
+    font-size: 30px;
+    border-style: groove;
+    text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87; }
+  main .f1f2 {
     margin-left: 10px;
     margin-right: 10px;
     gap: 30px; }
 
-footer .marca {
+.footer2 .marca, footer .marca {
   text-align: right;
   font-size: 15px;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-right: 15px; }
 
-footer div {
+.footer2 div, footer div {
   text-align: center; }
 
-footer .youtube {
+.footer2 .youtube, footer .youtube {
   display: flex;
   justify-content: center;
   margin-top: 15px; }
 
-footer .iconos-sociales img {
+.footer2 .iconos-sociales img, footer .iconos-sociales img {
   transition: all 0.5s ease-out;
   border-radius: 50px; }
 
-footer .iconos-sociales img:hover {
+.footer2 .iconos-sociales img:hover, footer .iconos-sociales img:hover {
   box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
   transform: translate(0px, -10px); }
+
+.actividades, .body1 header, .body1 main h2 {
+  text-align: center;
+  border-style: groove;
+  font-family: "Comfortaa", cursiva;
+  font-size: 20px;
+  background-color: rgba(105, 217, 189, 0.371);
+  text-decoration: underline; }
+
+.borde, .body1 main .borde {
+  border-style: groove;
+  font-weight: bold;
+  color: white;
+  background: rgba(116, 176, 116, 0.61);
+  font-size: 20px; }
+
+.footer2, footer {
+  width: 100%;
+  height: 160px;
+  background-color: black;
+  text-align: center; }
+
+.redes, .footer2 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center; }
+
+.btn-toolbar, .footer2, footer {
+  text-align: center;
+  font-size: 25px; }
+
+.video, .body1 main .video {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  min-width: 350px; }
 
 .body1 {
   background-image: url("../fotos/bambu fondo.jpg"); }
@@ -150,12 +188,43 @@ footer {
     text-align: right;
     font-size: 15px;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-right: 15px; }
   footer .youtube {
     display: flex;
     justify-content: center; }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (max-width: 576px) {
   .main {
-    width: 100%; } }
+    width: 100%; }
+  .footer2, footer {
+    width: 100%; }
+  .articulo_novedad {
+    font-size: 15px; }
+  p {
+    font-size: 20px; }
+  .f1 {
+    max-width: 50%;
+    display: flex;
+    flex-wrap: wrap; }
+  .f2 {
+    max-width: 50%;
+    display: flex;
+    flex-wrap: wrap; } }
+
+@media (min-width: 992px) {
+  .main {
+    width: 100%; }
+  .articulo_novedad {
+    font-size: 36px; }
+  .parrafo2 {
+    font-size: 30px; }
+  p {
+    font-size: 25px; }
+  .footer2, footer {
+    width: 100%;
+    height: 60%; }
+  .redes, .footer2 {
+    font-size: 20px; }
+  .nav-link {
+    font-size: 30px; } }

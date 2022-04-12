@@ -4,9 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*pagina principal */
+/*PAGINA PRINCIPAL */
 .body1{
     background-image: url(./fotos/bambu\ fondo.jpg);
+  
     
 }
 .navbar{
@@ -23,7 +24,7 @@
     font-size: 20px;
     background: #dadada;
 }
-.tituloprincipal{ /*titulo*/
+.tituloprincipal{ 
     color: #0c1111e8;
     font-family:'Pacifico', cursive;
     word-spacing: 8px;
@@ -35,20 +36,19 @@
     text-shadow: 0 0 0.2em rgba(81, 125, 34, 0.707), 0 0 0.2em rgba(96, 130, 140, 0.888);
 }
 .anime2{ 
-    font-family:'Comfortaa', cursiva;
-    font-size: 1.2em;
+    font-family:'Pacifico', cursive;
+    font-size: 20px;
     text-align: center;
     color: rgb(25, 31, 29);
     font-weight: bold;
     }           
 .texto{ 
-    font-family:'Comfortaa', cursiva;
-    font-size: 1.3em;
+    font-family:'Pacifico', cursive;
+    font-size: 25px;
     margin-top: 80px;
     text-align: center;
     padding: auto;
     color: black;
-    font-weight: bolder;
 }
 .iconos-sociales img{ 
     transition:all 0.5s ease-out; border-radius:50px;
@@ -73,14 +73,19 @@
 .card-text{
     font-size: 1em;
 }
+.card-body{
+    background: rgb(118,166,146);
+    background: radial-gradient(circle, rgba(118,166,146,0.7262255243894433) 
+    0%, rgba(61,179,110,0.6702031154258579) 66%, rgba(121,152,149,1) 94%);
+}
 .carousel{
     inherits: 2000;
 }
 .footer{
     width: 100%;
     height: 160px;
+    margin-bottom: auto;
     background-color: black;
-    bottom: 0;
     text-align: center;
 }  
 .btn-toolbar{
@@ -93,18 +98,28 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     color: rgb(244, 234, 234);
-    margin-bottom: 20px;
+    padding-bottom: 30px;
     margin-right: 15px;
 }
+.marca1{
+    text-align:right;
+    font-family:'Caveat', cursive;
+    font-size:15px;
+    margin-right: 15px;
+    color: rgb(20, 18, 18);
+   margin-top: 15px;
+
+}
 .maps{
-    margin-left: 10px;
+    margin-left: 20px;
     display: flex;
     justify-content: left;
+    padding-bottom: 10px;
 }
-
-/*pagina actividades en SASS*/
+/*LA PAGINA DE PROFESORA EN SASS CON @IMPORT*/
+/*LA PAGINA DE ACTIVIDADES EN SASS*/
              
-h3{             /* pagina cronograma*/
+h3{             /* CRONOGRAMA*/
     text-align: center;
     font-family:'Comfortaa', cursiva;
     padding-top: 0% auto;
@@ -158,40 +173,47 @@ tr{
     padding-top: 10px auto;
     text-align: center;
     width: 100%;
-
-}           /*pagina formulario contacto*/
+}           
+/*FORMULARIO DE CONTACTO*/
+.body2{
+    background-image: url(./fotos/bambu\ fondo.jpg);
+    background-repeat: no-repeat;
+}
 .contact{
     margin: auto;
     width: 350px;
     background:#22c0c397;
-    padding: 10px 20px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    padding: 20px 30px;
     border-radius: 10px;
     border-style:groove;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 .completar{
     font-size: 20px;
-    font-weight: bold;
     background:rgba(48, 65, 48, 0.514);
     text-align: center;
+    margin-bottom: 60px;
+    font-family: 'Pacifico', cursive;
+    padding-bottom: 30px;
 }
+    
  input{
-     width: 50%;
-     margin-bottom: 20px;
-     padding: auto;
+     width: 5%;
+     margin-bottom: 30px;
+     padding-bottom:  30px;
      font-family: Arial, Helvetica, sans-serif;
-     font-size: 17px;
+     font-size: 20px;
      text-align: center;
+     margin-bottom:30px ;
 }
 .col-sm-10{
-    color:#4e79b3;
+    color:#9ca3aa;
     margin:auto;
     text-align: center;
-    color: rgb(14, 14, 26);
 }
 .boton1:hover{
-   color: rgb(70, 70, 187); 
+   color: rgb(70, 187, 111); 
 }
 h5{
     font-size: 20px;
@@ -199,28 +221,44 @@ h5{
     text-align: center;
     color: white;
 }
+.footercontacto{
+    background-color: black;
+    text-align: center;
+    width: 100%;
+}
    
-/*Medidas*/
+/*MEDIDAS*/
 
-   @media only screen and (min-width: 360px) and (max-width: 768px) {
-	.body1{
+@media (max-width: 700px) and (min-width: 400px) {
+	
+    .body1{
         width: 100%;
     }
-}
-    @media only screen and (max-width: 450px){
-
-     main{
+    main{
          width: 100%;
      }   
+    .tituloprincipal{
+        font-size: 26px;
+    }
+    .anime2{
+        font-size: 15px;
+    }
+    .texto{
+        font-size: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
     .tablas{
-        min-width: 250px;
+        min-width: 200px;
         font-size: 15px;
 }
     tr{
         font-size: 15px;
 }  
     td{
-        font-size: 15px;
+        font-size: 10px;
+        background-color: black;
+        color: aliceblue;
 }
     .header{
         font-size: 20px;
@@ -229,9 +267,59 @@ h5{
         width:100%;
 }
      }
-
+     @media (min-width: 992px){
     
-
-
-
+        .body1{
+            width: 100%;
+        }
+        .nav-link{
+            font-size: 20px;
+        }
+        main{
+             width: 100%;
+             font-size: 20px;
+         }   
+        .tituloprincipal{
+            font-size: 35px;
+        }
+        .completar{
+            font-size: 30px;
+        }
+        .h5{
+            font-size: 20px;
+        }
+        .anime2{
+            font-size: 20px;
+            font-family: 'Caveat', cursive;
+        }
+        .texto{
+            font-size: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .tablas{
+            min-width: 500px;
+            font-size: 40px;
+    }
+        tr{
+            font-size: 30px;
+    }  
+        td{
+            font-size: 30px;
+    }
+        .header{
+            font-size: 30px;
+    }
+        p{
+            font-size: 30px;
     
+    }
+        .redes{
+        font-size: 30px;
+     }
+     
+       .btn-primary{
+        width: 50%;
+        height: 40%;
+    }
+}
