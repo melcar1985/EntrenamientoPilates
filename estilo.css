@@ -227,9 +227,10 @@ h5{
     width: 100%;
 }
    
+
 /*MEDIDAS*/
 
-@media (max-width: 700px) and (min-width: 400px) {
+@media (max-width: 700px) and (min-width: 375px) {
 	
     .body1{
         width: 100%;
@@ -298,8 +299,8 @@ h5{
             margin-right: 10px;
         }
         .tablas{
-            min-width: 500px;
-            font-size: 40px;
+            min-width: 400px;
+            font-size: 36px;
     }
         tr{
             font-size: 30px;

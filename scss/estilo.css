@@ -172,6 +172,7 @@ main .f1f2 {
 
 .body1 main article .beneficios {
   margin-bottom: 5rem;
+  margin-right: 30px auto;
   font-family: 'Caveat', cursive;
   text-align: center;
   list-style-type: none;

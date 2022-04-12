@@ -132,6 +132,7 @@ main {
   background-image: url("../fotos/bambu fondo.jpg"); }
   .body1 main article .beneficios {
     margin-bottom: 5rem;
+    margin-right: 30px auto;
     font-family: 'Caveat', cursive;
     text-align: center;
     list-style-type: none;
